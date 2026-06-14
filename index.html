@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+ <head>
+  <style data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget" type="text/css">
+   .fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0px;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:lucida grande,tahoma,verdana,arial,sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:400;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{0%{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+
+.fb_dialog{background:#525252b3;position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:700;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://connect.facebook.net/rsrc.php/v4/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://connect.facebook.net/rsrc.php/v4/ya/r/3rhSv5V8j3o.gif) #fff no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:#0006;inset:0;min-height:100%;position:absolute;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba),to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:#fff 0 1px 1px -1px inset;color:#fff;font:700 14px Helvetica,sans-serif;text-overflow:ellipsis;text-shadow:rgba(0,30,84,.296875) 0px -1px 0px;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2),to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:700 12px Helvetica,sans-serif;margin:2px -12px;padding:2px 6px 3px;text-shadow:rgba(0,30,84,.296875) 0px -1px 0px}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:700;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://connect.facebook.net/rsrc.php/v4/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4A4A4A;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4A4A4A;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://connect.facebook.net/rsrc.php/v4/y2/r/onuUJj0tCqE.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0)}to{transform:rotate(360deg)}}
+
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+  </style>
+ </head>
+ <body class="bg-surface text-on-surface font-body-md overflow-x-hidden" style="height: 4252.05px;">
+  <div class="fb_reset" id="fb-root">
+   <div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
+    <div>
+    </div>
+   </div>
+  </div>
+  <script async="" crossorigin="anonymous" src="https://connect.facebook.net/en_US/bundle/sdk.js/">
+  </script>
+  <script async="" crossorigin="anonymous" defer="" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v21.0">
+  </script>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   KiddoLearn - Let's Explore!
+  </title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+   tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "tertiary": "#705d00",
+                "surface-container-high": "#e7e7f1",
+                "secondary-container": "#e61335",
+                "on-secondary-fixed-variant": "#92001c",
+                "on-primary-container": "#a5bdff",
+                "surface-tint": "#2559bf",
+                "primary": "#00317e",
+                "surface-bright": "#faf8ff",
+                "on-tertiary-fixed": "#221b00",
+                "surface-container-highest": "#e2e2eb",
+                "on-surface": "#191b22",
+                "surface-container-lowest": "#ffffff",
+                "on-primary": "#ffffff",
+                "primary-fixed-dim": "#b2c5ff",
+                "on-surface-variant": "#434653",
+                "on-tertiary-container": "#4c3e00",
+                "inverse-on-surface": "#f0f0f9",
+                "on-error": "#ffffff",
+                "on-tertiary-fixed-variant": "#554500",
+                "on-secondary-fixed": "#410007",
+                "primary-fixed": "#dae2ff",
+                "primary-container": "#0046ad",
+                "on-error-container": "#93000a",
+                "surface-container-low": "#f3f3fc",
+                "secondary-fixed-dim": "#ffb3b1",
+                "on-secondary-container": "#fffbff",
+                "secondary": "#bb0026",
+                "error-container": "#ffdad6",
+                "outline": "#737784",
+                "outline-variant": "#c3c6d5",
+                "on-background": "#191b22",
+                "tertiary-container": "#caa800",
+                "surface-variant": "#e2e2eb",
+                "inverse-surface": "#2e3037",
+                "inverse-primary": "#b2c5ff",
+                "on-primary-fixed-variant": "#0040a0",
+                "background": "#faf8ff",
+                "surface-container": "#ededf6",
+                "on-primary-fixed": "#001847",
+                "surface": "#faf8ff",
+                "on-tertiary": "#ffffff",
+                "error": "#ba1a1a",
+                "tertiary-fixed-dim": "#eac300",
+                "surface-dim": "#d9d9e2",
+                "tertiary-fixed": "#ffe174",
+                "secondary-fixed": "#ffdad8",
+                "on-secondary": "#ffffff"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "stack-md": "24px",
+                "stack-lg": "48px",
+                "margin-mobile": "16px",
+                "base": "8px",
+                "stack-sm": "12px",
+                "margin-desktop": "64px",
+                "gutter": "24px",
+                "gutter-mobile": "16px",
+                "gutter-desktop": "32px"
+            },
+            "fontFamily": {
+                "headline-lg-mobile": ["Quicksand"],
+                "body-lg": ["Quicksand"],
+                "body-md": ["Quicksand"],
+                "display": ["Quicksand"],
+                "headline-md": ["Quicksand"],
+                "headline-lg": ["Quicksand"],
+                "label-lg": ["Quicksand"],
+                "label-sm": ["Quicksand"]
+            },
+            "fontSize": {
+                "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "500"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "700"}]
+            }
+          }
+        }
+      }
+  </script>
+  <style>
+   .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        
+        .bouncy-hover {
+            transition: all 400ms cubic-bezier(0.34, 1.56, 0.64, 1);
+            backface-visibility: hidden;
+            transform: translateZ(0);
+        }
+        .bouncy-hover:hover {
+            transform: scale(1.03) translateY(-8px) translateZ(0);
+        }
+        .bouncy-hover:active {
+            transform: scale(0.98) translateZ(0);
+        }
+
+        .push-button {
+            box-shadow: 0 4px 0 0 rgba(0,0,0,0.1);
+            transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        .push-button:active {
+            box-shadow: 0 0px 0 0 rgba(0,0,0,0.1);
+            transform: translateY(4px);
+        }
+        
+        /* Shimmer Animation for Primary Buttons */
+        .shimmer-effect::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                45deg,
+                transparent 25%,
+                rgba(255, 255, 255, 0.2) 50%,
+                transparent 75%
+            );
+            transform: rotate(45deg);
+            animation: shimmer 3s infinite;
+            pointer-events: none;
+        }
+        @keyframes shimmer {
+            0% { transform: translateX(-150%) rotate(45deg); }
+            100% { transform: translateX(150%) rotate(45deg); }
+        }
+
+        #bg-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        .floating-shape {
+            position: absolute;
+            opacity: 0.15;
+            will-change: transform;
+        }
+        
+        .bg-grid-container {
+            position: fixed;
+            top: -20%;
+            left: -20%;
+            width: 140%;
+            height: 140%;
+            z-index: -1;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        .bg-grid-pattern {
+            width: 100%;
+            height: 100%;
+            background-size: 60px 60px;
+            background-image: radial-gradient(circle, #cbd5e1 1.5px, transparent 1.5px);
+            will-change: transform;
+        }
+
+        .mouse-blob {
+            position: fixed;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(0, 70, 173, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+            pointer-events: none;
+            z-index: 5;
+            transform: translate(-50%, -50%);
+            transition: width 0.3s ease, height 0.3s ease;
+        }
+
+        /* Sparkle system */
+        .sparkle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: white;
+            border-radius: 50%;
+            pointer-events: none;
+            box-shadow: 0 0 10px 2px rgba(255,255,255,0.8);
+            opacity: 0;
+            animation: sparkle-pulse 2s infinite ease-in-out;
+        }
+        @keyframes sparkle-pulse {
+            0%, 100% { opacity: 0; transform: scale(0); }
+            50% { opacity: 0.6; transform: scale(1); }
+        }
+
+        html { overflow: auto; }
+        body { height: auto; overflow: auto; -webkit-font-smoothing: antialiased; }
+
+        #scroll-container {
+            position: static;
+            top: auto;
+            left: auto;
+            width: 100%;
+            height: auto;
+            overflow: visible;
+        }
+
+        #smooth-scroll-wrapper {
+            position: static;
+            top: auto;
+            left: auto;
+            width: 100%;
+            will-change: auto;
+            z-index: 1;
+        }
+
+        .antigravity-element {
+            will-change: transform;
+            transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .nav-link-active {
+            color: #00317e !important;
+            border-bottom: 2px solid #00317e;
+            font-weight: 700;
+        }
+
+        /* Rubik Title Float Animation */
+        @keyframes drift {
+            0%, 100% { transform: translateY(0) rotate(0); }
+            33% { transform: translateY(-3px) rotate(2deg); }
+            66% { transform: translateY(3px) rotate(-2deg); }
+        }
+        .rubik-char {
+            display: inline-block;
+            animation: drift 3s infinite ease-in-out;
+        }
+
+        /* Entrance Animation Classes */
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.23, 1, 0.32, 1), transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .reveal-on-scroll.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .rubiks-blue { border-color: #0046ad; box-shadow: 8px 8px 0px 0px #001847; }
+        .rubiks-red { border-color: #bb0026; box-shadow: 8px 8px 0px 0px #410007; }
+        .rubiks-yellow { border-color: #eac300; box-shadow: 8px 8px 0px 0px #554500; }
+        .rubiks-green { border-color: #006c49; box-shadow: 8px 8px 0px 0px #002e1f; }
+
+        .scratch-embed-container {
+            width: 100%;
+            position: relative;
+            background: #000;
+            aspect-ratio: 4/3;
+            overflow: hidden;
+            border-radius: 1rem;
+        }
+        .scratch-embed-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .squishy-button {
+            transition: transform 0.2s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+        }
+        .squishy-button:active {
+            transform: scale(0.85) rotate(-2deg);
+        }
+
+        .arcade-cabinet {
+            background: #191b22;
+            border: 12px solid #bb0026;
+            border-radius: 2rem;
+            padding: 1.5rem;
+            position: relative;
+            box-shadow: 0 0 0 6px #410007, 0 20px 50px rgba(0,0,0,0.5);
+        }
+        .arcade-cabinet::before {
+            content: 'FEATURED GAME';
+            position: absolute;
+            top: -24px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #bb0026;
+            color: white;
+            padding: 4px 20px;
+            border-radius: 99px;
+            font-weight: 800;
+            font-size: 14px;
+            letter-spacing: 2px;
+            box-shadow: 0 4px 0 #410007;
+            z-index: 10;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .reveal-on-scroll, 
+            .bouncy-hover, 
+            .rubik-char, 
+            .floating-shape, 
+            .sparkle, 
+            .shimmer-effect::after {
+                animation: none !important;
+                transition: none !important;
+                transform: none !important;
+                opacity: 1 !important;
+            }
+        }
+
+        
+        .fb-wrapper {
+            width: 100%;
+            max-width: 280px;
+            transform: scale(0.8);
+            transform-origin: center top;
+            margin: auto;
+        }
+
+        @media (min-width: 768px) {
+            .fb-wrapper {
+                max-width: 500px;
+                transform: scale(1);
+            }
+        }
+  </style>
+  <div class="mouse-blob" id="blob">
+  </div>
+  <div class="bg-grid-container" id="sparkle-layer">
+   <div class="bg-grid-pattern" id="interactive-grid" style="transform: translate3d(-14.5897px, 3.48427px, 0px) rotate(0deg);">
+   </div>
+   <div class="sparkle" style="left: 18.1974%; top: 43.5756%; animation-delay: 4.26139s;">
+   </div>
+   <div class="sparkle" style="left: 72.2483%; top: 95.6603%; animation-delay: 2.02019s;">
+   </div>
+   <div class="sparkle" style="left: 34.828%; top: 55.7695%; animation-delay: 2.81338s;">
+   </div>
+   <div class="sparkle" style="left: 94.5926%; top: 35.8813%; animation-delay: 1.67819s;">
+   </div>
+   <div class="sparkle" style="left: 57.5468%; top: 0.300416%; animation-delay: 1.36521s;">
+   </div>
+   <div class="sparkle" style="left: 1.38024%; top: 55.0702%; animation-delay: 4.07997s;">
+   </div>
+   <div class="sparkle" style="left: 25.286%; top: 63.6625%; animation-delay: 4.39594s;">
+   </div>
+   <div class="sparkle" style="left: 91.403%; top: 73.7647%; animation-delay: 4.29677s;">
+   </div>
+   <div class="sparkle" style="left: 19.2927%; top: 96.6226%; animation-delay: 2.12765s;">
+   </div>
+   <div class="sparkle" style="left: 44.6848%; top: 9.6143%; animation-delay: 0.196999s;">
+   </div>
+   <div class="sparkle" style="left: 47.7565%; top: 69.8537%; animation-delay: 1.88931s;">
+   </div>
+   <div class="sparkle" style="left: 91.9782%; top: 7.72319%; animation-delay: 3.08413s;">
+   </div>
+   <div class="sparkle" style="left: 3.12256%; top: 53.9587%; animation-delay: 1.47286s;">
+   </div>
+   <div class="sparkle" style="left: 44.3315%; top: 55.5482%; animation-delay: 3.50849s;">
+   </div>
+   <div class="sparkle" style="left: 95.885%; top: 29.6864%; animation-delay: 1.59776s;">
+   </div>
+  </div>
+  <div id="bg-canvas">
+   <div class="floating-shape bg-[#0046ad] w-[40vw] h-[40vw] rounded-full" data-speed="0.02" style="top: -5%; left: -10%; transform: translate3d(-11.2965px, 15.8988px, 0px);">
+   </div>
+   <div class="floating-shape bg-[#e61335] w-[45vw] h-[45vw] rounded-full" data-speed="0.015" style="top: 40%; left: 70%; transform: translate3d(-24.8702px, 24.8248px, 0px);">
+   </div>
+   <div class="floating-shape bg-[#caa800] w-[30vw] h-[30vw] rounded-full" data-speed="0.025" style="top: 20%; left: 30%; transform: translate3d(-15.5783px, 10.9271px, 0px);">
+   </div>
+   <div class="floating-shape bg-[#006c49] w-[25vw] h-[25vw] rounded-full" data-speed="0.01" style="top: 70%; left: 5%; transform: translate3d(8.03621px, -13.017px, 0px);">
+   </div>
+  </div>
+  <header class="fixed top-0 left-0 w-full h-16 md:h-20 px-margin-mobile md:px-margin-desktop bg-surface border-b border-surface-variant shadow-sm z-50 transition-all duration-500 grid grid-cols-3 items-center">
+   <div class="items-center contents">
+    <a class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary hover:scale-110 transition-transform" href="#">
+     <span class="rubik-char" style="color: rgb(183, 28, 28); animation-delay: 0s">
+      R
+     </span>
+     <span class="rubik-char" style="color: rgb(13, 71, 161); animation-delay: 0.1s">
+      u
+     </span>
+     <span class="rubik-char" style="color: rgb(255, 214, 0); animation-delay: 0.2s">
+      b
+     </span>
+     <span class="rubik-char" style="color: rgb(46, 125, 50); animation-delay: 0.3s">
+      i
+     </span>
+     <span class="rubik-char" style="color: rgb(239, 108, 0); animation-delay: 0.4s">
+      k
+     </span>
+    </a>
+    <nav class="hidden md:flex gap-6 items-center justify-self-center" id="main-nav">
+     <a class="nav-item text-on-surface-variant font-medium hover:bg-primary/10 hover:scale-105 transition-all duration-300 px-3 py-2 rounded-lg text-label-lg nav-link-active" href="#hero">
+      Home
+     </a>
+     <a class="nav-item text-on-surface-variant font-medium hover:bg-primary/10 hover:scale-105 transition-all duration-300 px-3 py-2 rounded-lg text-label-lg" href="#news">
+      News
+     </a>
+     <a class="nav-item text-on-surface-variant font-medium hover:bg-primary/10 hover:scale-105 transition-all duration-300 px-3 py-2 rounded-lg text-label-lg" href="#playground">
+      Playground
+     </a>
+    </nav>
+   </div>
+  </header>
+  <div id="scroll-container">
+   <div id="smooth-scroll-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+    <main class="pt-20">
+     <!-- Hero Section -->
+     <section class="min-h-[calc(100vh-80px)] flex items-center justify-center text-center px-margin-mobile md:px-margin-desktop py-24 antigravity-element" id="hero" style="transform: translate3d(0px, -4.86324px, 0px) rotateX(0deg) rotateY(0deg);">
+      <div class="max-w-4xl">
+       <h1 class="font-display text-headline-lg-mobile md:text-display leading-snug md:leading-none whitespace-normal text-on-background mb-6">
+        <span class="block">
+         <span class="rubik-char" style="color: #e53935; text-shadow: 2px 2px 0 #191b22;">W</span>
+         <span class="rubik-char" style="color: #1e88e5; text-shadow: 2px 2px 0 #191b22;">e</span>
+         <span class="rubik-char" style="color: #ffffff; text-shadow: 2px 2px 0 #191b22;">l</span>
+         <span class="rubik-char" style="color: #fdd835; text-shadow: 2px 2px 0 #191b22;">c</span>
+         <span class="rubik-char" style="color: #43a047; text-shadow: 2px 2px 0 #191b22;">o</span>
+         <span class="rubik-char" style="color: #fb8c00; text-shadow: 2px 2px 0 #191b22;">m</span>
+         <span class="rubik-char" style="color: #e53935; text-shadow: 2px 2px 0 #191b22;">e</span>
+        </span>
+        <span class="block">
+         <span class="rubik-char" style="color: #ffffff; text-shadow: 2px 2px 0 #191b22;">b</span>
+         <span class="rubik-char" style="color: #fdd835; text-shadow: 2px 2px 0 #191b22;">a</span>
+         <span class="rubik-char" style="color: #43a047; text-shadow: 2px 2px 0 #191b22;">c</span>
+         <span class="rubik-char" style="color: #fb8c00; text-shadow: 2px 2px 0 #191b22;">k</span>
+         <span class="rubik-char" style="color: #e53935; text-shadow: 2px 2px 0 #191b22;">,</span>
+        </span>
+        <span class="block">
+         <span class="rubik-char" style="color: #ffffff; text-shadow: 2px 2px 0 #191b22;">e</span>
+         <span class="rubik-char" style="color: #fdd835; text-shadow: 2px 2px 0 #191b22;">x</span>
+         <span class="rubik-char" style="color: #43a047; text-shadow: 2px 2px 0 #191b22;">p</span>
+         <span class="rubik-char" style="color: #fb8c00; text-shadow: 2px 2px 0 #191b22;">l</span>
+         <span class="rubik-char" style="color: #e53935; text-shadow: 2px 2px 0 #191b22;">o</span>
+         <span class="rubik-char" style="color: #1e88e5; text-shadow: 2px 2px 0 #191b22;">r</span>
+         <span class="rubik-char" style="color: #ffffff; text-shadow: 2px 2px 0 #191b22;">e</span>
+         <span class="rubik-char" style="color: #fdd835; text-shadow: 2px 2px 0 #191b22;">r</span>
+         <span class="rubik-char" style="color: #43a047; text-shadow: 2px 2px 0 #191b22;">!</span>
+        </span>
+       </h1>
+       <p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl mx-auto reveal-on-scroll active">
+        Dive into the new Interactive Playground and discover exciting games designed to make learning an adventure.
+       </p>
+       <div class="flex flex-wrap justify-center gap-6 reveal-on-scroll active" style="transition-delay: 0.1s">
+        <a class="bg-primary text-on-primary px-10 py-4 rounded-2xl font-bold text-lg push-button shimmer-effect magnetic-button flex items-center gap-2" href="#playground">
+         Enter Playground
+         <span class="material-symbols-outlined">
+          rocket_launch
+         </span>
+        </a>
+        <a class="bg-surface-container-highest text-primary px-10 py-4 rounded-2xl font-bold text-lg border-2 border-primary-container/20 hover:bg-primary-container/10 transition-colors push-button magnetic-button" href="#news">
+         Check Updates
+        </a>
+       </div>
+      </div>
+     </section>
+     <!-- Weekly News Section -->
+     <section class="px-margin-mobile md:px-margin-desktop py-16 antigravity-element" id="news" style="transform: translate3d(0px, -1.65032px, 0px) rotateX(0deg) rotateY(0deg);">
+      <div class="flex justify-between items-end mb-12 reveal-on-scroll active">
+       <div>
+        <h2 class="font-headline-lg text-headline-lg text-on-background mb-2">
+         <span class="rubik-char" style="color: #e53935; text-shadow: 2px 2px 0 #191b22;">
+          W
+         </span>
+         <span class="rubik-char" style="color: #1e88e5; text-shadow: 2px 2px 0 #191b22;">
+          e
+         </span>
+         <span class="rubik-char" style="color: #ffffff; text-shadow: 2px 2px 0 #191b22;">
+          e
+         </span>
+         <span class="rubik-char" style="color: #fdd835; text-shadow: 2px 2px 0 #191b22;">
+          k
+         </span>
+         <span class="rubik-char" style="color: #43a047; text-shadow: 2px 2px 0 #191b22;">
+          l
+         </span>
+         <span class="rubik-char" style="color: #fb8c00; text-shadow: 2px 2px 0 #191b22;">
+          y
+         </span>
+         <span>
+         </span>
+         <span class="rubik-char" style="color: #1e88e5; text-shadow: 2px 2px 0 #191b22;">
+          N
+         </span>
+         <span class="rubik-char" style="color: #ffffff; text-shadow: 2px 2px 0 #191b22;">
+          e
+         </span>
+         <span class="rubik-char" style="color: #fdd835; text-shadow: 2px 2px 0 #191b22;">
+          w
+         </span>
+         <span class="rubik-char" style="color: #43a047; text-shadow: 2px 2px 0 #191b22;">
+          s
+         </span>
+        </h2>
+        <p class="text-body-md text-on-surface-variant">
+         Stay updated with class progress and goals
+        </p>
+       </div>
+       <button class="text-primary font-bold hover:underline flex items-center gap-1 group">
+        See All
+        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">
+         chevron_right
+        </span>
+       </button>
+      </div>
+      <div class="gap-8 px-margin-mobile md:px-0">
+       <div class="w-full max-w-full md:max-w-2xl md:mx-auto flex flex-col gap-4 md:gap-6">
+        <div class="bg-surface-container-low px-4 md:px-6 py-3 md:py-4 rounded-t-2xl border-x-4 border-t-4 border-primary/20 flex items-center justify-between flex-col md:flex-row gap-3 md:gap-0">
+         <h3 class="font-bold text-primary flex items-center gap-2 text-body-lg md:text-label-lg">
+          <span class="material-symbols-outlined">
+           rss_feed
+          </span>
+          Official Feed
+         </h3>
+         <span class="text-label-sm text-on-surface-variant font-bold uppercase tracking-wider">
+          Real-time Updates
+         </span>
+        </div>
+        <div class="bg-surface-container-lowest rounded-b-2xl border-x-4 border-b-4 border-primary/20 shadow-xl reveal-on-scroll overflow-hidden p-2 md:p-1 active flex items-center justify-center min-h-[400px] md:min-h-[600px] w-full">
+         <div class="fb-wrapper">
+          <div class="fb-page fb_iframe_widget" data-adapt-container-width="true" data-height="600" data-hide-cover="false" data-href="https://www.facebook.com/npo.rubikproject" data-show-facepile="true" data-small-header="false" data-tabs="timeline" data-width="500" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=656&amp;height=600&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fnpo.rubikproject&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=500" fb-xfbml-state="rendered" style="transform: scale(1.2); transform-origin: center top 0px;">
+          <span style="vertical-align: top; width: 0px; height: 0px; overflow: hidden;">
+           <iframe allow="encrypted-media" allowfullscreen="true" allowtransparency="true" data-testid="fb:page Facebook Social Plugin" frameborder="0" height="600px" name="f4f3df56cf6a80b68" scrolling="no" src="https://www.facebook.com/v21.0/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df0ea0cb1766990a41%26domain%3D%26is_canvas%3Dfalse%26origin%3Dabout%253A%252F%252F%252Ff198fc7b2738883d5%26relation%3Dparent.parent&amp;container_width=656&amp;height=600&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fnpo.rubikproject&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=500" style="border: medium; visibility: visible; width: 0px; height: 0px;" title="fb:page Facebook Social Plugin" width="500px">
+           </iframe>
+          </span>
+         </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </section>
+     <!-- Interactive Playground Section -->
+     <section class="px-margin-mobile md:px-margin-desktop py-24 bg-surface-container-low/40 rounded-t-[4rem] antigravity-element relative z-10" id="playground" style="transform: translate3d(0px, 3.0799px, 0px) rotateX(0deg) rotateY(0deg);">
+      <div class="max-w-6xl mx-auto mb-16 flex flex-col md:flex-row md:items-end justify-between gap-base reveal-on-scroll active">
+       <div>
+        <h2 class="font-display text-headline-lg-mobile md:text-display leading-snug md:leading-none whitespace-normal text-primary mb-4">
+         <span class="block">Interactive</span>
+         <span class="block">Playground</span>
+        </h2>
+        <p class="text-body-lg text-on-surface-variant max-w-2xl">
+         A curated space for fun, learning, and creativity. Play, earn points, and level up your skills!
+        </p>
+       </div>
+       <div class="flex gap-base mt-6 md:mt-0">
+        <div class="bg-white px-6 py-3 rounded-2xl flex items-center gap-3 shadow-lg border-2 border-primary-fixed group hover:scale-110 transition-transform">
+         <span class="material-symbols-outlined text-primary group-hover:rotate-[360deg] transition-transform duration-1000" style="font-size: 24px;">
+          stars
+         </span>
+         <div class="flex flex-col">
+          <span class="text-label-sm font-bold text-on-surface-variant uppercase">
+           Total Points
+          </span>
+          <span class="text-headline-md font-bold text-primary">
+           1,240
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <!-- Playground Bento Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 max-w-7xl mx-auto">
+       <!-- Featured Game -->
+       <div class="md:col-span-12 group arcade-cabinet bouncy-hover reveal-on-scroll active">
+        <div class="flex flex-col h-full gap-6">
+         <div class="arcade-cabinet-screen aspect-[485/402] w-full max-w-[1200px] mx-auto relative overflow-hidden bg-black">
+                    <div class="p-4 relative rounded-[1.5rem] overflow-hidden bg-black aspect-[485/402]">
+                     <iframe src="https://quizlet.com/1187827895/match/embed?i=72u16e&x=1jj1" class="absolute inset-0 w-full h-full" style="border:0"></iframe>
+                    </div>
+         </div>
+        </div>
+       </div>
+       <!-- Game 3 -->
+       <div class="md:col-span-7 group bg-[#006c49] rounded-[2.5rem] border-4 rubiks-green bouncy-hover reveal-on-scroll active" style="transition-delay: 0.2s">
+ <div class="p-4 flex flex-col h-full min-h-[620px] md:min-h-[720px]">
+  <div class="relative w-full flex-1 rounded-[1.5rem] overflow-hidden bg-black">
+    <iframe src="https://wayground.com/pro/join?gc=30463098" title="L1: WATER SAFETY" class="absolute inset-0 w-full h-full" style="border:0" allowfullscreen></iframe>
+  </div>
+ </div>
+</div>
+       <!-- Game 4 -->
+       <div class="md:col-span-5 group bg-secondary-container rounded-[2.5rem] border-4 rubiks-red bouncy-hover reveal-on-scroll active" style="transition-delay: 0.3s">
+ <div class="p-4 pb-4 flex flex-col h-full min-h-[620px] md:min-h-[720px]">
+  <div class="relative w-full flex-1 rounded-[1.5rem] overflow-hidden bg-black">
+    <iframe src="https://wayground.com/pro/join?gc=16241786" title="Lesson 1: My summer" class="absolute inset-0 w-full h-full" style="border:0" allowfullscreen></iframe>
+  </div>
+ </div>
+</div>
+      <!-- Quick Access Actions -->
+      <div class="mt-20 flex justify-center reveal-on-scroll">
+       <div class="bg-surface-container-highest/80 p-4 rounded-3xl flex flex-wrap md:flex-nowrap gap-4 md:gap-6 items-center justify-start border-4 border-primary/20 shadow-2xl backdrop-blur-sm w-full max-w-full overflow-x-auto">
+        <span class="font-bold px-4 text-on-surface whitespace-nowrap">
+         Explore Categories:
+        </span>
+        <button class="bg-[#e61335] text-white px-6 py-2 rounded-full font-bold text-label-sm hover:scale-105 transition-all push-button shadow-sm magnetic-button">
+         Arcade
+        </button>
+        <button class="bg-[#006c49] text-white px-6 py-2 rounded-full font-bold text-label-sm hover:scale-105 transition-all push-button shadow-sm magnetic-button">
+         Puzzles
+        </button>
+        <button class="bg-[#0046ad] text-white px-6 py-2 rounded-full font-bold text-label-sm hover:scale-105 transition-all push-button shadow-sm magnetic-button">
+         Science
+        </button>
+        <button class="bg-[#eac300] text-on-tertiary-fixed px-6 py-2 rounded-full font-bold text-label-sm hover:scale-105 transition-all push-button shadow-sm magnetic-button">
+         Art
+        </button>
+       </div>
+      </div>
+     </section>
+    </main>
+    <footer class="bg-secondary text-on-secondary w-full rounded-t-[4rem] mt-16 px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-center gap-8 relative z-10 antigravity-element" style="transform: translate3d(0px, 4.97847px, 0px) rotateX(0deg) rotateY(0deg);">
+     <div class="flex flex-col items-center md:items-start gap-4">
+      <span class="text-headline-md font-headline-md text-white">
+       CuboLogic
+      </span>
+      <p class="text-body-md font-medium text-white/90 text-center md:text-left">
+       © 2024 CuboLogic Adventure. Made with curiosity!
+      </p>
+     </div>
+     <nav class="flex flex-wrap justify-center gap-8">
+      <a class="text-white hover:underline transition-colors font-bold" href="#">
+       Privacy Policy
+      </a>
+      <a class="text-white hover:underline transition-colors font-bold" href="#">
+       Safety Center
+      </a>
+      <a class="text-white hover:underline transition-colors font-bold" href="#">
+       Parent Guide
+      </a>
+      <a class="text-white hover:underline transition-colors font-bold" href="#">
+       Help
+      </a>
+     </nav>
+     <div class="flex gap-4">
+      <button class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-secondary hover:scale-110 transition-transform shadow-lg push-button magnetic-button">
+       <span class="material-symbols-outlined">
+        share
+       </span>
+      </button>
+      <button class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-secondary hover:scale-110 transition-transform shadow-lg push-button magnetic-button">
+       <span class="material-symbols-outlined">
+        favorite
+       </span>
+      </button>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script>
+   const state = {
+        mouseX: 0,
+        mouseY: 0,
+        targetMouseX: 0,
+        targetMouseY: 0,
+        scroll: 0,
+        targetScroll: 0,
+        time: 0,
+        winW: window.innerWidth,
+        winH: window.innerHeight
+    };
+
+    const grid = document.getElementById('interactive-grid');
+    const shapes = document.querySelectorAll('.floating-shape');
+    const elements = document.querySelectorAll('.antigravity-element');
+    const header = document.querySelector('header');
+    const blob = document.getElementById('blob');
+    const scrollWrapper = document.getElementById('smooth-scroll-wrapper');
+    const sparkleLayer = document.getElementById('sparkle-layer');
+    const reveals = document.querySelectorAll('.reveal-on-scroll');
+    const magneticButtons = document.querySelectorAll('.magnetic-button');
+    
+    let wrapperHeight = 0;
+    
+    // ResizeObserver disabled for native scrolling
+    // const resizeObserver = new ResizeObserver(() => {
+    //     wrapperHeight = scrollWrapper.getBoundingClientRect().height;
+    //     document.body.style.height = `${wrapperHeight}px`;
+    //     state.winW = window.innerWidth;
+    //     state.winH = window.innerHeight;
+    // });
+    // resizeObserver.observe(scrollWrapper);
+
+    // Magnetic Button Effect
+    magneticButtons.forEach(btn => {
+        btn.addEventListener('mousemove', (e) => {
+            const rect = btn.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+            btn.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px) scale(1.05)`;
+        });
+        btn.addEventListener('mouseleave', () => {
+            btn.style.transform = `translate(0, 0) scale(1)`;
+        });
+    });
+
+    // Create Sparkles
+    for(let i=0; i<15; i++) {
+        const sparkle = document.createElement('div');
+        sparkle.className = 'sparkle';
+        sparkle.style.left = Math.random() * 100 + '%';
+        sparkle.style.top = Math.random() * 100 + '%';
+        sparkle.style.animationDelay = Math.random() * 5 + 's';
+        sparkleLayer.appendChild(sparkle);
+    }
+
+    window.addEventListener('mousemove', (e) => {
+        state.targetMouseX = (e.clientX / state.winW) - 0.5;
+        state.targetMouseY = (e.clientY / state.winH) - 0.5;
+        
+        blob.style.left = e.clientX + 'px';
+        blob.style.top = e.clientY + 'px';
+    });
+
+    // Smooth scroll disabled - using native browser scrolling
+    // window.addEventListener('wheel', (e) => {
+    //     state.targetScroll += e.deltaY * 1.5;
+    //     state.targetScroll = Math.max(0, Math.min(state.targetScroll, wrapperHeight - state.winH));
+    // }, { passive: true });
+
+    // let touchStartY = 0;
+    // window.addEventListener('touchstart', e => touchStartY = e.touches[0].clientY, {passive: true});
+    // window.addEventListener('touchmove', e => {
+    //     const touchY = e.touches[0].clientY;
+    //     const deltaY = touchStartY - touchY;
+    //     state.targetScroll += deltaY * 3;
+    //     state.targetScroll = Math.max(0, Math.min(state.targetScroll, wrapperHeight - state.winH));
+    //     touchStartY = touchY;
+    // }, {passive: true});
+
+    function checkReveals() {
+        reveals.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight * 0.9) {
+                el.classList.add('active');
+                
+                // Specific logic for progress bars
+                const bar = el.querySelector('#progress-bar-1');
+                if(bar && bar.style.width === "0%") {
+                    bar.style.width = "65%";
+                }
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkReveals, { passive: true });
+    checkReveals(); // Initial check
+
+    function animate() {
+        state.time += 0.01;
+        state.mouseX += (state.targetMouseX - state.mouseX) * 0.05;
+        state.mouseY += (state.targetMouseY - state.mouseY) * 0.05;
+        // Smooth scroll disabled
+        // state.scroll += (state.targetScroll - state.scroll) * 0.12;
+        // scrollWrapper.style.transform = `translate3d(0, -${state.scroll}px, 0)`;
+
+        if (window.scrollY > 50) {
+            header.classList.add('h-16', 'shadow-md', 'bg-surface/95');
+            header.classList.remove('h-20', 'shadow-sm');
+        } else {
+            header.classList.add('h-20', 'shadow-sm');
+            header.classList.remove('h-16', 'shadow-md', 'bg-surface/95');
+        }
+
+        // Nav active tracking disabled with smooth scroll
+        // const sections = ['hero', 'news', 'playground'];
+        // const navItems = document.querySelectorAll('.nav-item');
+        // sections.forEach((id, index) => {
+        //     const section = document.getElementById(id);
+        //     if (section) {
+        //         const rect = section.getBoundingClientRect();
+        //         const wrapperRect = scrollWrapper.getBoundingClientRect();
+        //         const offsetTop = rect.top - wrapperRect.top;
+        //         
+        //         if (state.scroll >= offsetTop - 250 && state.scroll < (offsetTop + rect.height - 250)) {
+        //             navItems.forEach(item => item.classList.remove('nav-link-active'));
+        //             if(navItems[index]) navItems[index].classList.add('nav-link-active');
+        //         }
+        //     }
+        // });
+
+        const gridX = state.mouseX * -80 + Math.sin(state.time * 0.5) * 15;
+        const gridY = state.mouseY * -80 + Math.cos(state.time * 0.5) * 15;
+        grid.style.transform = `translate3d(${gridX}px, ${gridY}px, 0) rotate(${state.mouseX * 3}deg)`;
+
+        shapes.forEach((shape, index) => {
+            const speed = parseFloat(shape.dataset.speed || 0.02);
+            const driftX = Math.sin(state.time + index) * 25;
+            const driftY = Math.cos(state.time * 0.8 + index) * 25;
+            const moveX = (state.mouseX * speed * state.winW) + driftX;
+            const moveY = (state.mouseY * speed * state.winH) + driftY;
+            shape.style.transform = `translate3d(${moveX}px, ${moveY}px, 0)`;
+        });
+
+        elements.forEach((el, index) => {
+            const sway = Math.sin(state.time * 0.5 + index) * 5;
+            const tiltX = state.mouseY * 8;
+            const tiltY = state.mouseX * -8;
+            const lift = (state.targetScroll - state.scroll) * 0.08;
+            el.style.transform = `translate3d(0, ${sway + lift}px, 0) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+        });
+
+        checkReveals();
+        requestAnimationFrame(animate);
+    }
+
+    animate();
+
+    // Anchor link smooth scroll disabled
+    // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    //     anchor.addEventListener('click', function (e) {
+    //         const targetId = this.getAttribute('href');
+    //         if (targetId !== '#') {
+    //             e.preventDefault();
+    //             const target = document.querySelector(targetId);
+    //             if(target) {
+    //                 const targetRect = target.getBoundingClientRect();
+    //                 const wrapperRect = scrollWrapper.getBoundingClientRect();
+    //                 const offsetTop = targetRect.top - wrapperRect.top;
+    //                 state.targetScroll = Math.max(0, Math.min(offsetTop - 100, wrapperHeight - state.winH));
+    //             }
+    //         }
+    //     });
+    // });
+  </script>
+ </body>
+</html>
