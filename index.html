@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html class="scroll-smooth" lang="en">
  <head>
+    <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <style data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget" type="text/css">
    .fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0px;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:lucida grande,tahoma,verdana,arial,sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:400;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{0%{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
 
@@ -9,7 +11,7 @@
 .fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
   </style>
  </head>
- <body class="bg-surface text-on-surface font-body-md overflow-x-hidden" style="height: 4252.05px;">
+ <body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
   <div class="fb_reset" id="fb-root">
    <div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
     <div>
@@ -23,7 +25,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>
-   KiddoLearn - Let's Explore!
+    Rubik - Let's Explore!
   </title>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries">
   </script>
@@ -329,8 +331,19 @@
             position: relative;
             box-shadow: 0 0 0 6px #410007, 0 20px 50px rgba(0,0,0,0.5);
         }
+        #wayground1, #wayground1::before {
+            border-color: #0046ad;
+            content: 'LESSON 1: WATER SAFETY';
+            background: #0046ad;
+        }
+        #wayground2, #wayground2::before {
+            border-color: #00f721;
+            content: 'LESSON 1: MY SUMMER';
+            background: #00f721;
+        }
+
         .arcade-cabinet::before {
-            content: 'FEATURED GAME';
+            content: 'LESSON 1: WHAT DO YOU DO IN SUMMER?';
             position: absolute;
             top: -24px;
             left: 50%;
@@ -345,6 +358,8 @@
             box-shadow: 0 4px 0 #410007;
             z-index: 10;
         }
+        
+        
 
         @media (prefers-reduced-motion: reduce) {
             .reveal-on-scroll, 
@@ -429,16 +444,16 @@
       R
      </span>
      <span class="rubik-char" style="color: rgb(13, 71, 161); animation-delay: 0.1s">
-      u
+      U
      </span>
      <span class="rubik-char" style="color: rgb(255, 214, 0); animation-delay: 0.2s">
-      b
+      B
      </span>
      <span class="rubik-char" style="color: rgb(46, 125, 50); animation-delay: 0.3s">
-      i
+      I
      </span>
      <span class="rubik-char" style="color: rgb(239, 108, 0); animation-delay: 0.4s">
-      k
+      K
      </span>
     </a>
     <nav class="hidden md:flex gap-6 items-center justify-self-center" id="main-nav">
@@ -609,53 +624,50 @@
        </div>
       </div>
       <!-- Playground Bento Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 max-w-7xl mx-auto">
-       <!-- Featured Game -->
-       <div class="md:col-span-12 group arcade-cabinet bouncy-hover reveal-on-scroll active">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+       
+    <div class="col-span-1 group arcade-cabinet bouncy-hover reveal-on-scroll active">
         <div class="flex flex-col h-full gap-6">
-         <div class="arcade-cabinet-screen aspect-[485/402] w-full max-w-[1200px] mx-auto relative overflow-hidden bg-black">
-                    <div class="p-4 relative rounded-[1.5rem] overflow-hidden bg-black aspect-[485/402]">
-                     <iframe src="https://quizlet.com/1187827895/match/embed?i=72u16e&x=1jj1" class="absolute inset-0 w-full h-full" style="border:0"></iframe>
-                    </div>
-         </div>
+            <div class="arcade-cabinet-screen aspect-[485/402] w-full max-w-[1200px] mx-auto relative overflow-hidden bg-black rounded-[1.5rem]">
+                <a href="https://quizlet.com/vn/1187827895/lesson-1-what-do-you-do-in-summer-flash-cards/?i=76oyy6&x=1jqt" target="_blank" rel="noopener noreferrer" class="block w-full h-full relative">
+                    <img src="img/quizzlet.png" 
+                         alt="Lesson 1 Quizlet" 
+                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                         style="border:0">
+                </a>
+            </div>
         </div>
-       </div>
-       <!-- Game 3 -->
-       <div class="md:col-span-7 group bg-[#006c49] rounded-[2.5rem] border-4 rubiks-green bouncy-hover reveal-on-scroll active" style="transition-delay: 0.2s">
- <div class="p-4 flex flex-col h-full min-h-[620px] md:min-h-[720px]">
-  <div class="relative w-full flex-1 rounded-[1.5rem] overflow-hidden bg-black">
-    <iframe src="https://wayground.com/pro/join?gc=30463098" title="L1: WATER SAFETY" class="absolute inset-0 w-full h-full" style="border:0" allowfullscreen></iframe>
-  </div>
- </div>
-</div>
-       <!-- Game 4 -->
-       <div class="md:col-span-5 group bg-secondary-container rounded-[2.5rem] border-4 rubiks-red bouncy-hover reveal-on-scroll active" style="transition-delay: 0.3s">
- <div class="p-4 pb-4 flex flex-col h-full min-h-[620px] md:min-h-[720px]">
-  <div class="relative w-full flex-1 rounded-[1.5rem] overflow-hidden bg-black">
-    <iframe src="https://wayground.com/pro/join?gc=16241786" title="Lesson 1: My summer" class="absolute inset-0 w-full h-full" style="border:0" allowfullscreen></iframe>
-  </div>
- </div>
+    </div>
+
+    <div class="col-span-1 group arcade-cabinet bouncy-hover reveal-on-scroll active" id="wayground1">
+        <div class="flex flex-col h-full gap-6">
+            <div class="arcade-cabinet-screen-2 aspect-[485/402] w-full max-w-[1200px] mx-auto relative overflow-hidden bg-black rounded-[1.5rem]">
+                <a href="https://wayground.com/pro/join?gc=30463098" target="_blank" rel="noopener noreferrer" class="block w-full h-full relative">
+                    <img src="img/wayground1.png" 
+                         alt="Lesson 1: WATER SAFETY" 
+                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                         style="border:0">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-span-1 group arcade-cabinet bouncy-hover reveal-on-scroll active" id="wayground2">
+        <div class="flex flex-col h-full gap-6">
+            <div class="arcade-cabinet-screen-3 aspect-[485/402] w-full max-w-[1200px] mx-auto relative overflow-hidden bg-black rounded-[1.5rem]">
+                <a href="https://wayground.com/pro/join?gc=16241786" target="_blank" rel="noopener noreferrer" class="block w-full h-full relative">
+                    <img src="img/wayground2.png" 
+                         alt="Lesson 1: My summer" 
+                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                         style="border:0">
+                </a>
+            </div>
+        </div>
+    </div>
+
 </div>
       <!-- Quick Access Actions -->
-      <div class="mt-20 flex justify-center reveal-on-scroll">
-       <div class="bg-surface-container-highest/80 p-4 rounded-3xl flex flex-wrap md:flex-nowrap gap-4 md:gap-6 items-center justify-start border-4 border-primary/20 shadow-2xl backdrop-blur-sm w-full max-w-full overflow-x-auto">
-        <span class="font-bold px-4 text-on-surface whitespace-nowrap">
-         Explore Categories:
-        </span>
-        <button class="bg-[#e61335] text-white px-6 py-2 rounded-full font-bold text-label-sm hover:scale-105 transition-all push-button shadow-sm magnetic-button">
-         Arcade
-        </button>
-        <button class="bg-[#006c49] text-white px-6 py-2 rounded-full font-bold text-label-sm hover:scale-105 transition-all push-button shadow-sm magnetic-button">
-         Puzzles
-        </button>
-        <button class="bg-[#0046ad] text-white px-6 py-2 rounded-full font-bold text-label-sm hover:scale-105 transition-all push-button shadow-sm magnetic-button">
-         Science
-        </button>
-        <button class="bg-[#eac300] text-on-tertiary-fixed px-6 py-2 rounded-full font-bold text-label-sm hover:scale-105 transition-all push-button shadow-sm magnetic-button">
-         Art
-        </button>
-       </div>
-      </div>
+      
      </section>
     </main>
     <footer class="bg-secondary text-on-secondary w-full rounded-t-[4rem] mt-16 px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-center gap-8 relative z-10 antigravity-element" style="transform: translate3d(0px, 4.97847px, 0px) rotateX(0deg) rotateY(0deg);">
