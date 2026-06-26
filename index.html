@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en" style="">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Rubik - Let's Explore!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script type="module" src="/src/main.js"></script>
+</head>
+
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden" style="height: 3396px;">
+    <div id="fb-root"></div>
+    <script async="" crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v21.0"></script>
+    <div class="mouse-blob" id="blob" style="left: 1012px; top: 4766px;"></div>
+    <div class="bg-grid-container" id="sparkle-layer">
+        <div class="bg-grid-pattern" id="interactive-grid"
+            style="transform: translate3d(-25.1978px, -52.5268px, 0px) rotate(0.871875deg);"></div>
+        <div class="sparkle" style="left: 30.6884%; top: 24.5025%; animation-delay: 0.579796s;"></div>
+        <div class="sparkle" style="left: 0.525255%; top: 9.16962%; animation-delay: 2.15109s;"></div>
+        <div class="sparkle" style="left: 86.0775%; top: 8.79662%; animation-delay: 1.30976s;"></div>
+        <div class="sparkle" style="left: 20.2323%; top: 11.4313%; animation-delay: 1.95382s;"></div>
+        <div class="sparkle" style="left: 96.4522%; top: 16.326%; animation-delay: 0.193309s;"></div>
+        <div class="sparkle" style="left: 1.8062%; top: 81.6446%; animation-delay: 0.849398s;"></div>
+        <div class="sparkle" style="left: 94.4851%; top: 75.6968%; animation-delay: 3.00296s;"></div>
+        <div class="sparkle" style="left: 85.1366%; top: 65.9972%; animation-delay: 4.92867s;"></div>
+        <div class="sparkle" style="left: 18.8599%; top: 6.02019%; animation-delay: 3.99766s;"></div>
+        <div class="sparkle" style="left: 46.2603%; top: 1.86977%; animation-delay: 3.67537s;"></div>
+        <div class="sparkle" style="left: 51.8527%; top: 76.3266%; animation-delay: 3.15482s;"></div>
+        <div class="sparkle" style="left: 42.3691%; top: 32.5316%; animation-delay: 3.50644s;"></div>
+        <div class="sparkle" style="left: 22.5409%; top: 82.5781%; animation-delay: 1.1851s;"></div>
+        <div class="sparkle" style="left: 96.9364%; top: 13.5884%; animation-delay: 1.75748s;"></div>
+        <div class="sparkle" style="left: 47.601%; top: 54.6577%; animation-delay: 2.17066s;"></div>
+        <div class="sparkle" style="left: 9.12954%; top: 45.2594%; animation-delay: 0.305999s;"></div>
+        <div class="sparkle" style="left: 15.3074%; top: 29.7852%; animation-delay: 4.93048s;"></div>
+        <div class="sparkle" style="left: 75.6405%; top: 31.9292%; animation-delay: 4.21844s;"></div>
+        <div class="sparkle" style="left: 64.4973%; top: 36.3652%; animation-delay: 2.4039s;"></div>
+        <div class="sparkle" style="left: 8.95752%; top: 94.3471%; animation-delay: 4.69826s;"></div>
+        <div class="sparkle" style="left: 35.5044%; top: 77.1058%; animation-delay: 2.19078s;"></div>
+        <div class="sparkle" style="left: 65.7244%; top: 91.6524%; animation-delay: 1.41662s;"></div>
+        <div class="sparkle" style="left: 26.9164%; top: 58.0644%; animation-delay: 0.731156s;"></div>
+        <div class="sparkle" style="left: 84.5081%; top: 3.82627%; animation-delay: 4.86541s;"></div>
+        <div class="sparkle" style="left: 98.968%; top: 13.3474%; animation-delay: 1.15659s;"></div>
+        <div class="sparkle" style="left: 34.6621%; top: 22.5069%; animation-delay: 0.894976s;"></div>
+        <div class="sparkle" style="left: 1.64267%; top: 81.4571%; animation-delay: 1.55415s;"></div>
+        <div class="sparkle" style="left: 66.8307%; top: 15.0002%; animation-delay: 3.96227s;"></div>
+        <div class="sparkle" style="left: 32.6421%; top: 11.1781%; animation-delay: 2.98693s;"></div>
+        <div class="sparkle" style="left: 29.8231%; top: 23.2371%; animation-delay: 3.594s;"></div>
+        <div class="sparkle" style="left: 48.2881%; top: 14.4864%; animation-delay: 4.5738s;"></div>
+        <div class="sparkle" style="left: 39.4998%; top: 6.15715%; animation-delay: 3.98442s;"></div>
+        <div class="sparkle" style="left: 53.0352%; top: 86.3414%; animation-delay: 3.30211s;"></div>
+        <div class="sparkle" style="left: 20.263%; top: 73.2009%; animation-delay: 0.987108s;"></div>
+        <div class="sparkle" style="left: 22.9874%; top: 50.7785%; animation-delay: 3.84785s;"></div>
+        <div class="sparkle" style="left: 62.277%; top: 97.848%; animation-delay: 3.57336s;"></div>
+        <div class="sparkle" style="left: 75.5446%; top: 7.83196%; animation-delay: 1.39062s;"></div>
+        <div class="sparkle" style="left: 52.2262%; top: 4.15178%; animation-delay: 3.95019s;"></div>
+        <div class="sparkle" style="left: 70.1524%; top: 81.9504%; animation-delay: 1.29445s;"></div>
+        <div class="sparkle" style="left: 85.8872%; top: 57.4374%; animation-delay: 4.76985s;"></div>
+        <div class="sparkle" style="left: 51.0441%; top: 43.0252%; animation-delay: 4.49073s;"></div>
+        <div class="sparkle" style="left: 19.1167%; top: 7.10732%; animation-delay: 1.18941s;"></div>
+        <div class="sparkle" style="left: 1.1867%; top: 80.5974%; animation-delay: 1.99931s;"></div>
+        <div class="sparkle" style="left: 18.7965%; top: 39.7507%; animation-delay: 2.97909s;"></div>
+        <div class="sparkle" style="left: 58.6705%; top: 65.2854%; animation-delay: 3.84014s;"></div>
+        <div class="sparkle" style="left: 69.4683%; top: 55.8836%; animation-delay: 0.885336s;"></div>
+        <div class="sparkle" style="left: 5.2892%; top: 29.2626%; animation-delay: 1.36023s;"></div>
+        <div class="sparkle" style="left: 46.9871%; top: 71.229%; animation-delay: 2.46603s;"></div>
+        <div class="sparkle" style="left: 68.3224%; top: 49.2631%; animation-delay: 4.53101s;"></div>
+        <div class="sparkle" style="left: 98.7397%; top: 70.8391%; animation-delay: 0.817799s;"></div>
+        <div class="sparkle" style="left: 15.3028%; top: 19.7191%; animation-delay: 1.15546s;"></div>
+        <div class="sparkle" style="left: 78.7076%; top: 18.0274%; animation-delay: 1.98639s;"></div>
+        <div class="sparkle" style="left: 11.4946%; top: 4.32762%; animation-delay: 0.692732s;"></div>
+        <div class="sparkle" style="left: 90.391%; top: 45.5905%; animation-delay: 4.38788s;"></div>
+        <div class="sparkle" style="left: 52.5089%; top: 77.1035%; animation-delay: 4.50789s;"></div>
+        <div class="sparkle" style="left: 16.7041%; top: 50.9154%; animation-delay: 4.25302s;"></div>
+        <div class="sparkle" style="left: 78.7664%; top: 47.3772%; animation-delay: 1.61534s;"></div>
+        <div class="sparkle" style="left: 4.30857%; top: 24.3537%; animation-delay: 2.80906s;"></div>
+        <div class="sparkle" style="left: 23.6665%; top: 95.8683%; animation-delay: 2.91666s;"></div>
+        <div class="sparkle" style="left: 29.1823%; top: 21.801%; animation-delay: 0.800954s;"></div>
+    </div>
+    <div id="bg-canvas">
+        <div class="floating-shape bg-[#0046ad] w-[40vw] h-[40vw] rounded-full" data-speed="0.02"
+            style="transform: translate3d(7.44px, 46.22px, 0px);"></div>
+        <div class="floating-shape bg-[#e61335] w-[45vw] h-[45vw] rounded-full" data-speed="0.015"
+            style="transform: translate3d(5.58px, 34.665px, 0px);"></div>
+        <div class="floating-shape bg-[#caa800] w-[30vw] h-[30vw] rounded-full" data-speed="0.025"
+            style="transform: translate3d(9.3px, 57.775px, 0px);"></div>
+        <div class="floating-shape bg-[#006c49] w-[25vw] h-[25vw] rounded-full" data-speed="0.01"
+            style="transform: translate3d(3.72px, 23.11px, 0px);"></div>
+    </div>
+    <header
+        class="fixed top-0 left-0 w-full px-margin-mobile md:px-margin-desktop bg-surface border-b border-surface-variant z-50 transition-all duration-500 grid grid-cols-2 md:grid-cols-3 items-center h-20 shadow-sm">
+        <div class="items-center contents">
+            <a class="text-headline-md sm:text-headline-lg font-headline-lg text-primary hover:scale-110 transition-transform" href="#">
+                <span class="rubik-char" style="color: #e53935; animation-delay: 0s">R</span>
+                <span class="rubik-char" style="color: #1e88e5; animation-delay: 0.1s">U</span>
+                <span class="rubik-char" style="color: #fdd835; animation-delay: 0.2s">B</span>
+                <span class="rubik-char" style="color: #43a047; animation-delay: 0.3s">I</span>
+                <span class="rubik-char" style="color: #fb8c00; animation-delay: 0.4s">K</span>
+            </a>
+            <nav class="hidden md:flex gap-6 items-center justify-self-center" id="main-nav">
+                <a class="nav-item text-on-surface-variant font-medium hover:bg-primary/10 hover:scale-105 transition-all duration-300 px-3 py-2 rounded-lg text-label-lg nav-link-active"
+                    href="#hero">
+                    <span class="en:inline vi:hidden">Home</span>
+                    <span class="vi:inline en:hidden">Trang chủ</span>
+                </a>
+                <a class="nav-item text-on-surface-variant font-medium hover:bg-primary/10 hover:scale-105 transition-all duration-300 px-3 py-2 rounded-lg text-label-lg"
+                    href="#news">
+                    <span class="en:inline vi:hidden">News</span>
+                    <span class="vi:inline en:hidden">Tin tức</span>
+                </a>
+                <a class="nav-item text-on-surface-variant font-medium hover:bg-primary/10 hover:scale-105 transition-all duration-300 px-3 py-2 rounded-lg text-label-lg"
+                    href="#playground">
+                    <span class="en:inline vi:hidden">Playground</span>
+                    <span class="vi:inline en:hidden">Sân chơi</span>
+                </a>
+            </nav>
+            <button id="lang-toggle"
+                class="justify-self-end bg-primary/10 hover:bg-primary/20 text-primary font-bold px-3 sm:px-4 py-2 rounded-xl transition-all duration-300 push-button cursor-pointer flex items-center gap-1.5 sm:gap-2 text-[14px] sm:text-base">
+                <span class="material-symbols-outlined text-[20px]">language</span>
+                <span class="hidden sm:inline">
+                    <span class="en:inline vi:hidden">Tiếng Việt</span>
+                    <span class="vi:inline en:hidden">English</span>
+                </span>
+                <span class="sm:hidden">
+                    <span class="en:inline vi:hidden">VI</span>
+                    <span class="vi:inline en:hidden">EN</span>
+                </span>
+            </button>
+        </div>
+    </header>
+    <div id="scroll-container">
+        <div id="smooth-scroll-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+            <main class="pt-20">
+                <!-- Hero Section -->
+                <section
+                    class="min-h-[calc(100vh-80px)] flex items-center justify-center text-center px-margin-mobile md:px-margin-desktop py-24 antigravity-element"
+                    id="hero"
+                    style="transform: translate3d(0px, -0.649272px, 0px) rotateX(3.76538deg) rotateY(-2.325deg);">
+                    <div class="max-w-4xl">
+                        <div class="en:block vi:hidden">
+                            <h1 class="font-display text-display text-on-background mb-6">
+                                <span class="rubik-char"
+                                    style="color: #e53935; text-shadow: 2px 2px 0 #191b22;">W</span><span
+                                    class="rubik-char"
+                                    style="color: #1e88e5; text-shadow: 2px 2px 0 #191b22;">e</span><span
+                                    class="rubik-char"
+                                    style="color: #ffffff; text-shadow: 2px 2px 0 #191b22;">l</span><span
+                                    class="rubik-char"
+                                    style="color: #fdd835; text-shadow: 2px 2px 0 #191b22;">c</span><span
+                                    class="rubik-char"
+                                    style="color: #43a047; text-shadow: 2px 2px 0 #191b22;">o</span><span
+                                    class="rubik-char"
+                                    style="color: #fb8c00; text-shadow: 2px 2px 0 #191b22;">m</span><span
+                                    class="rubik-char"
+                                    style="color: #e53935; text-shadow: 2px 2px 0 #191b22;">e</span><span> </span>
+                                <span class="rubik-char"
+                                    style="color: #ffffff; text-shadow: 2px 2px 0 #191b22;">b</span><span
+                                    class="rubik-char"
+                                    style="color: #fdd835; text-shadow: 2px 2px 0 #191b22;">a</span><span
+                                    class="rubik-char"
+                                    style="color: #43a047; text-shadow: 2px 2px 0 #191b22;">c</span><span
+                                    class="rubik-char"
+                                    style="color: #fb8c00; text-shadow: 2px 2px 0 #191b22;">k</span><span
+                                    class="rubik-char"
+                                    style="color: #e53935; text-shadow: 2px 2px 0 #191b22;">,</span><span> </span>
+                                <span class="rubik-char"
+                                    style="color: #ffffff; text-shadow: 2px 2px 0 #191b22;">e</span><span
+                                    class="rubik-char"
+                                    style="color: #fdd835; text-shadow: 2px 2px 0 #191b22;">x</span><span
+                                    class="rubik-char"
+                                    style="color: #43a047; text-shadow: 2px 2px 0 #191b22;">p</span><span
+                                    class="rubik-char"
+                                    style="color: #fb8c00; text-shadow: 2px 2px 0 #191b22;">l</span><span
+                                    class="rubik-char"
+                                    style="color: #e53935; text-shadow: 2px 2px 0 #191b22;">o</span><span
+                                    class="rubik-char"
+                                    style="color: #1e88e5; text-shadow: 2px 2px 0 #191b22;">r</span><span
+                                    class="rubik-char"
+                                    style="color: #ffffff; text-shadow: 2px 2px 0 #191b22;">e</span><span
+                                    class="rubik-char"
+                                    style="color: #fdd835; text-shadow: 2px 2px 0 #191b22;">r</span><span
+                                    class="rubik-char" style="color: #43a047; text-shadow: 2px 2px 0 #191b22;">!</span>
+                            </h1>
+                            <p
+                                class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl mx-auto reveal-on-scroll active">
+                                Dive into the new Interactive Playground and discover exciting games designed to make
+                                learning an adventure.
+                            </p>
+                            <div class="flex flex-wrap justify-center gap-6 reveal-on-scroll active"
+                                style="transition-delay: 0.1s">
+                                <a class="bg-primary text-on-primary px-10 py-4 rounded-2xl font-bold text-lg push-button shimmer-effect magnetic-button flex items-center gap-2"
+                                    href="#playground" style="transform: translate(0px) scale(1);">
+                                    Enter Playground <span class="material-symbols-outlined">rocket_launch</span>
+                                </a>
+                                <a class="bg-surface-container-highest text-primary px-10 py-4 rounded-2xl font-bold text-lg border-2 border-primary-container/20 hover:bg-primary-container/10 transition-colors push-button magnetic-button"
+                                    href="#news" style="transform: translate(0px) scale(1);">
+                                    Check Updates
+                                </a>
+                            </div>
+                        </div>
+                        <div class="vi:block en:hidden">
+                            <h1 class="font-display text-display text-on-background mb-6">
+                                <span class="rubik-char"
+                                    style="color: #e53935; text-shadow: 2px 2px 0 #191b22; animation-delay: 0s">C</span><span
+                                    class="rubik-char"
+                                    style="color: #1e88e5; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.05s">h</span><span
+                                    class="rubik-char"
+                                    style="color: #ffffff; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.1s">à</span><span
+                                    class="rubik-char"
+                                    style="color: #fdd835; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.15s">o</span><span>
+                                </span>
+                                <span class="rubik-char"
+                                    style="color: #43a047; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.2s">m</span><span
+                                    class="rubik-char"
+                                    style="color: #fb8c00; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.25s">ừ</span><span
+                                    class="rubik-char"
+                                    style="color: #e53935; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.3s">n</span><span
+                                    class="rubik-char"
+                                    style="color: #1e88e5; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.35s">g</span><span>
+                                </span>
+                                <span class="rubik-char"
+                                    style="color: #ffffff; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.4s">q</span><span
+                                    class="rubik-char"
+                                    style="color: #fdd835; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.45s">u</span><span
+                                    class="rubik-char"
+                                    style="color: #43a047; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.5s">a</span><span
+                                    class="rubik-char"
+                                    style="color: #fb8c00; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.55s">y</span><span>
+                                </span>
+                                <span class="rubik-char"
+                                    style="color: #e53935; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.6s">t</span><span
+                                    class="rubik-char"
+                                    style="color: #1e88e5; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.65s">r</span><span
+                                    class="rubik-char"
+                                    style="color: #ffffff; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.7s">ở</span><span>
+                                </span>
+                                <span class="rubik-char"
+                                    style="color: #fdd835; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.75s">l</span><span
+                                    class="rubik-char"
+                                    style="color: #43a047; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.8s">ạ</span><span
+                                    class="rubik-char"
+                                    style="color: #fb8c00; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.85s">i</span><span
+                                    class="rubik-char"
+                                    style="color: #e53935; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.9s">,</span><span>
+                                </span>
+                                <span class="rubik-char"
+                                    style="color: #1e88e5; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.95s">n</span><span
+                                    class="rubik-char"
+                                    style="color: #ffffff; text-shadow: 2px 2px 0 #191b22; animation-delay: 1.0s">h</span><span
+                                    class="rubik-char"
+                                    style="color: #fdd835; text-shadow: 2px 2px 0 #191b22; animation-delay: 1.05s">à</span><span>
+                                </span>
+                                <span class="rubik-char"
+                                    style="color: #43a047; text-shadow: 2px 2px 0 #191b22; animation-delay: 1.1s">t</span><span
+                                    class="rubik-char"
+                                    style="color: #fb8c00; text-shadow: 2px 2px 0 #191b22; animation-delay: 1.15s">h</span><span
+                                    class="rubik-char"
+                                    style="color: #e53935; text-shadow: 2px 2px 0 #191b22; animation-delay: 1.2s">á</span><span
+                                    class="rubik-char"
+                                    style="color: #1e88e5; text-shadow: 2px 2px 0 #191b22; animation-delay: 1.25s">m</span><span>
+                                </span>
+                                <span class="rubik-char"
+                                    style="color: #ffffff; text-shadow: 2px 2px 0 #191b22; animation-delay: 1.3s">h</span><span
+                                    class="rubik-char"
+                                    style="color: #fdd835; text-shadow: 2px 2px 0 #191b22; animation-delay: 1.35s">i</span><span
+                                    class="rubik-char"
+                                    style="color: #43a047; text-shadow: 2px 2px 0 #191b22; animation-delay: 1.4s">ể</span><span
+                                    class="rubik-char"
+                                    style="color: #fb8c00; text-shadow: 2px 2px 0 #191b22; animation-delay: 1.45s">m</span><span
+                                    class="rubik-char"
+                                    style="color: #e53935; text-shadow: 2px 2px 0 #191b22; animation-delay: 1.5s">!</span>
+                            </h1>
+                            <p
+                                class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl mx-auto reveal-on-scroll active">
+                                Hãy đắm mình vào Sân chơi Tương tác mới và khám phá các trò chơi thú vị giúp việc học
+                                trở thành một cuộc phiêu lưu.
+                            </p>
+                            <div class="flex flex-wrap justify-center gap-6 reveal-on-scroll active"
+                                style="transition-delay: 0.1s">
+                                <a class="bg-primary text-on-primary px-10 py-4 rounded-2xl font-bold text-lg push-button shimmer-effect magnetic-button flex items-center gap-2"
+                                    href="#playground" style="transform: translate(0px) scale(1);">
+                                    Vào Sân Chơi <span class="material-symbols-outlined">rocket_launch</span>
+                                </a>
+                                <a class="bg-surface-container-highest text-primary px-10 py-4 rounded-2xl font-bold text-lg border-2 border-primary-container/20 hover:bg-primary-container/10 transition-colors push-button magnetic-button"
+                                    href="#news" style="transform: translate(0px) scale(1);">
+                                    Xem Cập Nhật
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- News Section -->
+                <section class="py-16 px-margin-mobile md:px-margin-desktop antigravity-element" id="news"
+                    style="transform: translate3d(0px, -4.52253px, 0px) rotateX(3.76538deg) rotateY(-2.325deg);">
+                    <div class="flex justify-center relative items-end mb-12 reveal-on-scroll active">
+                        <div>
+                            <h2 class="font-headline-lg text-headline-lg text-on-background mb-2">
+                                <span class="en:inline vi:hidden">
+                                    <span class="rubik-char"
+                                        style="color: #e53935; text-shadow: 2px 2px 0 #191b22;">W</span><span
+                                        class="rubik-char"
+                                        style="color: #1e88e5; text-shadow: 2px 2px 0 #191b22;">e</span><span
+                                        class="rubik-char"
+                                        style="color: #ffffff; text-shadow: 2px 2px 0 #191b22;">e</span><span
+                                        class="rubik-char"
+                                        style="color: #fdd835; text-shadow: 2px 2px 0 #191b22;">k</span><span
+                                        class="rubik-char"
+                                        style="color: #43a047; text-shadow: 2px 2px 0 #191b22;">l</span><span
+                                        class="rubik-char"
+                                        style="color: #fb8c00; text-shadow: 2px 2px 0 #191b22;">y</span><span>
+                                    </span><span class="rubik-char"
+                                        style="color: #1e88e5; text-shadow: 2px 2px 0 #191b22;">N</span><span
+                                        class="rubik-char"
+                                        style="color: #ffffff; text-shadow: 2px 2px 0 #191b22;">e</span><span
+                                        class="rubik-char"
+                                        style="color: #fdd835; text-shadow: 2px 2px 0 #191b22;">w</span><span
+                                        class="rubik-char"
+                                        style="color: #43a047; text-shadow: 2px 2px 0 #191b22;">s</span>
+                                </span>
+                                <span class="vi:inline en:hidden">
+                                    <span class="rubik-char"
+                                        style="color: #e53935; text-shadow: 2px 2px 0 #191b22; animation-delay: 0s">T</span><span
+                                        class="rubik-char"
+                                        style="color: #1e88e5; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.1s">i</span><span
+                                        class="rubik-char"
+                                        style="color: #ffffff; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.2s">n</span><span>
+                                    </span><span class="rubik-char"
+                                        style="color: #fdd835; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.3s">t</span><span
+                                        class="rubik-char"
+                                        style="color: #43a047; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.4s">ứ</span><span
+                                        class="rubik-char"
+                                        style="color: #fb8c00; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.5s">c</span>
+                                </span>
+                            </h2>
+                            <p class="text-body-md text-on-surface-variant">
+                                <span class="en:inline vi:hidden">Stay updated with class progress and goals</span>
+                                <span class="vi:inline en:hidden">Cập nhật tiến trình và mục tiêu lớp học</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full max-w-[500px] mx-auto flex flex-col">
+                        <div
+                            class="bg-surface-container-low px-6 py-4 rounded-t-2xl border-x-4 border-t-4 border-primary/20 flex items-center justify-between w-full">
+                            <h3 class="font-bold text-primary flex items-center gap-2">
+                                <span class="material-symbols-outlined">rss_feed</span>
+                                <span class="en:inline vi:hidden">Official Feed</span>
+                                <span class="vi:inline en:hidden">Bảng tin Chính thức</span>
+                            </h3>
+                            <span class="text-label-sm text-on-surface-variant font-bold uppercase tracking-wider">
+                                <span class="en:inline vi:hidden">Real-time Updates</span>
+                                <span class="vi:inline en:hidden">Cập nhật Thời gian thực</span>
+                            </span>
+                        </div>
+                        <div class="w-full border-x-4 border-b-4 border-primary/20 rounded-b-2xl overflow-hidden bg-white flex justify-center">
+                            <div class="fb-page" data-href="https://www.facebook.com/npo.rubikproject"
+                                data-tabs="timeline" data-width="500" data-height="500"
+                                data-adapt-container-width="true" data-small-header="false" data-hide-cover="false"
+                                data-show-facepile="true">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Playground Section -->
+                <section
+                    class="px-margin-mobile md:px-margin-desktop py-24 bg-surface-container-low/40 rounded-t-[4rem] antigravity-element relative z-10"
+                    id="playground"
+                    style="transform: translate3d(0px, -4.2378px, 0px) rotateX(3.76538deg) rotateY(-2.325deg);">
+                    <div
+                        class="max-w-6xl mx-auto mb-16 flex flex-col md:flex-row md:items-end justify-between gap-base reveal-on-scroll active">
+                        <div>
+                            <h2 class="font-display text-display text-primary mb-4">
+                                <span class="en:inline vi:hidden">
+                                    <span class="rubik-char"
+                                        style="color: #e53935; text-shadow: 2px 2px 0 #191b22;">P</span><span
+                                        class="rubik-char"
+                                        style="color: #1e88e5; text-shadow: 2px 2px 0 #191b22;">l</span><span
+                                        class="rubik-char"
+                                        style="color: #ffffff; text-shadow: 2px 2px 0 #191b22;">a</span><span
+                                        class="rubik-char"
+                                        style="color: #fdd835; text-shadow: 2px 2px 0 #191b22;">y</span><span
+                                        class="rubik-char"
+                                        style="color: #43a047; text-shadow: 2px 2px 0 #191b22;">g</span><span
+                                        class="rubik-char"
+                                        style="color: #fb8c00; text-shadow: 2px 2px 0 #191b22;">r</span><span
+                                        class="rubik-char"
+                                        style="color: #e53935; text-shadow: 2px 2px 0 #191b22;">o</span><span
+                                        class="rubik-char"
+                                        style="color: #1e88e5; text-shadow: 2px 2px 0 #191b22;">u</span><span
+                                        class="rubik-char"
+                                        style="color: #ffffff; text-shadow: 2px 2px 0 #191b22;">n</span><span
+                                        class="rubik-char"
+                                        style="color: #fdd835; text-shadow: 2px 2px 0 #191b22;">d</span>
+                                </span>
+                                <span class="vi:inline en:hidden">
+                                    <span class="rubik-char"
+                                        style="color: #e53935; text-shadow: 2px 2px 0 #191b22; animation-delay: 0s">S</span><span
+                                        class="rubik-char"
+                                        style="color: #1e88e5; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.1s">â</span><span
+                                        class="rubik-char"
+                                        style="color: #ffffff; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.2s">n</span><span>
+                                    </span><span class="rubik-char"
+                                        style="color: #fdd835; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.3s">c</span><span
+                                        class="rubik-char"
+                                        style="color: #43a047; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.4s">h</span><span
+                                        class="rubik-char"
+                                        style="color: #fb8c00; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.5s">ơ</span><span
+                                        class="rubik-char"
+                                        style="color: #e53935; text-shadow: 2px 2px 0 #191b22; animation-delay: 0.6s">i</span>
+                                </span>
+                            </h2>
+                            <p class="text-body-lg text-on-surface-variant max-w-2xl">
+                                <span class="en:inline vi:hidden">A curated space for fun, learning, and creativity.
+                                    Play and level up your skills!</span>
+                                <span class="vi:inline en:hidden">Không gian được tuyển chọn cho niềm vui, học tập và
+                                    sáng tạo. Chơi và thăng tiến kỹ năng của bạn!</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto items-stretch">
+                        <!-- Lesson 1: What do you do in summer? -->
+                        <div class="arcade-cabinet bouncy-hover reveal-on-scroll flex flex-col h-full w-full active">
+                            <div class="flex flex-col h-full gap-6">
+                                <div class="arcade-cabinet-screen w-full overflow-hidden rounded-xl border-4 border-black"
+                                    style="height: 500px;"><img alt="Lesson 1: What do you do in summer?"
+                                        class="w-full h-full object-cover"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7euITDaoPVVRZgBO24uHQO7OByooDNTpgE97-7m6B-8-rw9-U3yK8DqhMetLuzYjJ1fOKlaw9y5B7TTDiVlgkZHiEvowV6OA4EUVzy7fX2TgJ7D4TrWq5DYcXDPpY7gRi7AdRU5DT7LTQGmwMwU0DJXTZ_ix6G_7vKgpDdq4I6wMGJrBKh94MTsbZFY1wktPDKzG9Ho7fHewfbTkkKwBe4ONTAD0W1LGkGjsDpCA1Qu8dLqf7_e_7yovCTdarfKJMSFfhwbwCb4E">
+                                </div>
+                                <div class="flex-1 flex flex-col justify-between">
+                                    <div>
+                                        <h3 class="text-headline-md font-bold text-white mb-2">
+                                            <span class="en:inline vi:hidden">Lesson 1: What do you do in summer?</span>
+                                            <span class="vi:inline en:hidden">Bài học 1: Bạn làm gì vào mùa hè?</span>
+                                        </h3>
+                                        <p class="text-white/80 font-medium">
+                                            <span class="en:inline vi:hidden">Embark on our newest playable adventure!
+                                                Explore hidden secrets and solve puzzles.</span>
+                                            <span class="vi:inline en:hidden">Bắt đầu cuộc phiêu lưu chơi được mới nhất
+                                                của chúng tôi! Khám phá bí mật ẩn và giải câu đố.</span>
+                                        </p>
+                                    </div>
+                                    <div class="mt-6">
+                                        <a class="w-full bg-[#e61335] text-white py-3 px-6 rounded-xl font-bold squishy-button shimmer-effect shadow-xl flex items-center justify-center gap-2 border-b-4 border-[#92001c] magnetic-button"
+                                            href="https://quizlet.com/vn/1187827895/lesson-1-what-do-you-do-in-summer-flash-cards/?i=76oyy6&amp;x=1jqt"
+                                            style="transform: translate(0px) scale(1);" target="_blank">
+                                            <span class="en:inline vi:hidden">START LESSON</span>
+                                            <span class="vi:inline en:hidden">BẮT ĐẦU BÀI HỌC</span>
+                                            <span class="material-symbols-outlined text-[18px]">rocket_launch</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Lesson 1: Water Safety -->
+                        <div class="group bg-tertiary-container rounded-[2.5rem] p-8 border-4 rubiks-yellow flex flex-col justify-between bouncy-hover reveal-on-scroll h-full w-full active"
+                            style="transition-delay: 0.1s;">
+                            <div>
+                                <div class="flex justify-between items-start mb-6">
+                                    <span
+                                        class="bg-on-tertiary-fixed text-tertiary-fixed px-4 py-1 rounded-full text-label-sm font-bold uppercase">
+                                        <span class="en:inline vi:hidden">Safety</span>
+                                        <span class="vi:inline en:hidden">An toàn</span>
+                                    </span>
+                                    <span
+                                        class="material-symbols-outlined text-on-tertiary-fixed group-hover:rotate-12 transition-transform">waves</span>
+                                </div>
+                                <h3 class="text-headline-md font-bold text-on-tertiary-fixed mb-4">
+                                    <span class="en:inline vi:hidden">Lesson 1: Water Safety</span>
+                                    <span class="vi:inline en:hidden">Bài học 1: An toàn Nước</span>
+                                </h3>
+                                <div class="arcade-cabinet-screen w-full overflow-hidden rounded-xl border-4 border-black mb-6"
+                                    style="height: 500px;"><img alt="Lesson 1: Water Safety"
+                                        class="w-full h-full object-cover"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc16XqjVcxQFDKUjrFyNvrCI1xwsu4czYHQU4tAE0lFkiytkyzpBUmeC9vPkwE9tUR-UgKW0VG6YE7h6RWUjMDNfslBhxutE0zOtsEx-yUwf5j5hbcJbVRr1ao-dmlDxLmDQ15Sw3xgBSyoijDhPDmQfLk70Tp1K-Oq846JoGmoRg-G1saqvni91nbg11Ft_Nsy3gC9GGQvaYnx3er0DgZqYUPB6Bl7TvTACThe2aN69nkjfW8Eow7By85jgQsBW2kn457EHa1YbU">
+                                </div>
+                                <p class="text-on-tertiary-container font-medium">
+                                    <span class="en:inline vi:hidden">Learn essential water safety tips through
+                                        interactive challenges.</span>
+                                    <span class="vi:inline en:hidden">Học các mẹo an toàn nước thiết yếu thông qua thử
+                                        thách tương tác.</span>
+                                </p>
+                            </div>
+                            <a href="https://wayground.com/pro/join?gc=30463098" target="_blank"
+                                class="mt-8 bg-on-tertiary-fixed text-tertiary-fixed py-4 rounded-2xl font-bold squishy-button shadow-xl flex items-center justify-center gap-2 magnetic-button"
+                                style="transform: translate(0px) scale(1);">
+                                <span class="en:inline vi:hidden">Play Now</span>
+                                <span class="vi:inline en:hidden">Chơi Ngay</span>
+                                <span class="material-symbols-outlined">play_circle</span>
+                            </a>
+                        </div>
+                        <!-- Lesson 1: My Summer -->
+                        <div class="group bg-[#006c49] rounded-[2.5rem] p-8 border-4 rubiks-green flex flex-col justify-between bouncy-hover reveal-on-scroll h-full w-full active"
+                            style="transition-delay: 0.2s;">
+                            <div>
+                                <div class="flex justify-between items-start mb-6">
+                                    <span
+                                        class="bg-[#002e1f] text-white px-4 py-1 rounded-full text-label-sm font-bold uppercase">
+                                        <span class="en:inline vi:hidden">Quiz</span>
+                                        <span class="vi:inline en:hidden">Đố vui</span>
+                                    </span>
+                                    <span
+                                        class="material-symbols-outlined text-[#e0f2f1] group-hover:scale-125 transition-transform">edit_note</span>
+                                </div>
+                                <h3 class="text-headline-md font-bold text-white mb-4">
+                                    <span class="en:inline vi:hidden">Lesson 1: Summer Time Quiz</span>
+                                    <span class="vi:inline en:hidden">Bài học 1: Đố vui Mùa hè</span>
+                                </h3>
+                                <div class="arcade-cabinet-screen w-full overflow-hidden rounded-xl border-4 border-black mb-6"
+                                    style="height: 500px;"><img alt="Lesson 1: Summer Time Quiz"
+                                        class="w-full h-full object-cover"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIIC_f2Ha_Vj0GJG9qu0e_WHcfG7AmjKN5pk7fUYKE4NqWeQSta_BnuShw1u5VZ5kVy4876w-myEo78XCbAU2gp-L4jyC13xGGz1yHbVCHYadr8wEd1wnhZbI0Wxyx1CMLW_PQ4uRSewTPXyol1sMGy1jxamSrNIb_Tjz4HlAuekKcy9RQE7sHgz4ZqvKQb4GiXprsj3WqacqhNLqVoR3pXv12CuRdurHglzQqMq6-WgvQlrHjYPRS_CzpXnu72uQoJ4Kkvu-ERcQ">
+                                </div>
+                                <p class="text-white/80 font-medium">
+                                    <span class="en:inline vi:hidden">Test your knowledge about summer activities and
+                                        safety in this fun interactive quiz!</span>
+                                    <span class="vi:inline en:hidden">Kiểm tra kiến thức của bạn về các hoạt động mùa hè
+                                        và an toàn trong trò đố vui tương tác thú vị này!</span>
+                                </p>
+                            </div>
+                            <a href="https://wayground.com/pro/join?gc=16241786" target="_blank"
+                                class="mt-8 bg-white text-[#006c49] py-4 rounded-2xl font-bold squishy-button shadow-xl flex items-center justify-center gap-2 magnetic-button"
+                                style="transform: translate(0px) scale(1);">
+                                <span class="en:inline vi:hidden">Start Quiz</span>
+                                <span class="vi:inline en:hidden">Bắt đầu Đố vui</span>
+                                <span class="material-symbols-outlined">rocket_launch</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer
+                class="bg-secondary text-on-secondary w-full rounded-t-[4rem] mt-16 px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-center gap-8 relative z-10 antigravity-element"
+                style="transform: translate3d(0px, -0.0568518px, 0px) rotateX(3.76538deg) rotateY(-2.325deg);">
+                <div class="flex flex-col items-center md:items-start gap-4">
+                    <span class="text-headline-md font-headline-md text-white">Rubik</span>
+                    <p class="text-body-md font-medium text-white/90 text-center md:text-left">
+                        <span class="en:inline vi:hidden">© 2024 Rubik Adventure. Made with curiosity!</span>
+                        <span class="vi:inline en:hidden">© 2024 Rubik Adventure. Được tạo ra với sự tò mò!</span>
+                    </p>
+                </div>
+                <nav class="flex flex-wrap justify-center gap-8">
+                    <a class="text-white hover:underline transition-colors font-bold" href="#">
+                        <span class="en:inline vi:hidden">Privacy Policy</span>
+                        <span class="vi:inline en:hidden">Chính sách Bảo mật</span>
+                    </a>
+                    <a class="text-white hover:underline transition-colors font-bold" href="#">
+                        <span class="en:inline vi:hidden">Safety Center</span>
+                        <span class="vi:inline en:hidden">Trung tâm An toàn</span>
+                    </a>
+                    <a class="text-white hover:underline transition-colors font-bold" href="#">
+                        <span class="en:inline vi:hidden">Parent Guide</span>
+                        <span class="vi:inline en:hidden">Hướng dẫn Phụ huynh</span>
+                    </a>
+                    <a class="text-white hover:underline transition-colors font-bold" href="#">
+                        <span class="en:inline vi:hidden">Help</span>
+                        <span class="vi:inline en:hidden">Trợ giúp</span>
+                    </a>
+                </nav>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
