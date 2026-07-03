@@ -21,8 +21,23 @@ const scrollWrapper = document.getElementById('smooth-scroll-wrapper');
 const sparkleLayer = document.getElementById('sparkle-layer');
 const reveals = document.querySelectorAll('.reveal-on-scroll');
 const magneticButtons = document.querySelectorAll('.magnetic-button');
+const navItems = document.querySelectorAll('#main-nav .nav-item');
+const sections = document.querySelectorAll('main > section[id]');
 
 let wrapperHeight = 0;
+let sectionOffsets = [];
+
+function calculateSectionOffsets() {
+    if (!scrollWrapper) return;
+    const wrapperRect = scrollWrapper.getBoundingClientRect();
+    sectionOffsets = Array.from(sections).map(sec => {
+        const rect = sec.getBoundingClientRect();
+        return {
+            id: sec.getAttribute('id'),
+            offsetTop: rect.top - wrapperRect.top
+        };
+    });
+}
 
 const resizeObserver = new ResizeObserver(() => {
     if (scrollWrapper) {
@@ -31,6 +46,7 @@ const resizeObserver = new ResizeObserver(() => {
     }
     state.winW = window.innerWidth;
     state.winH = window.innerHeight;
+    calculateSectionOffsets();
 });
 
 if (scrollWrapper) {
@@ -124,9 +140,28 @@ function animate() {
     });
 
     checkReveals();
+    updateActiveNav();
     requestAnimationFrame(animate);
 }
 
+function updateActiveNav() {
+    let activeSectionId = 'hero';
+    for (const sec of sectionOffsets) {
+        if (state.scroll >= sec.offsetTop - 200) {
+            activeSectionId = sec.id;
+        }
+    }
+    navItems.forEach(item => {
+        const href = item.getAttribute('href');
+        if (href === `#${activeSectionId}`) {
+            item.classList.add('nav-link-active');
+        } else {
+            item.classList.remove('nav-link-active');
+        }
+    });
+}
+
+calculateSectionOffsets();
 animate();
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

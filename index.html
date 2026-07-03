@@ -95,7 +95,8 @@
     <header
         class="fixed top-0 left-0 w-full px-margin-mobile md:px-margin-desktop bg-surface border-b border-surface-variant z-50 transition-all duration-500 grid grid-cols-2 md:grid-cols-3 items-center h-20 shadow-sm">
         <div class="items-center contents">
-            <a class="text-headline-md sm:text-headline-lg font-headline-lg text-primary hover:scale-110 transition-transform" href="#">
+            <a class="text-headline-md sm:text-headline-lg font-headline-lg text-primary hover:scale-110 transition-transform"
+                href="#">
                 <span class="rubik-char" style="color: #e53935; animation-delay: 0s">R</span>
                 <span class="rubik-char" style="color: #1e88e5; animation-delay: 0.1s">U</span>
                 <span class="rubik-char" style="color: #fdd835; animation-delay: 0.2s">B</span>
@@ -356,7 +357,8 @@
                                 <span class="vi:inline en:hidden">Cập nhật Thời gian thực</span>
                             </span>
                         </div>
-                        <div class="w-full border-x-4 border-b-4 border-primary/20 rounded-b-2xl overflow-hidden bg-white flex justify-center">
+                        <div
+                            class="w-full border-x-4 border-b-4 border-primary/20 rounded-b-2xl overflow-hidden bg-white flex justify-center">
                             <div class="fb-page" data-href="https://www.facebook.com/npo.rubikproject"
                                 data-tabs="timeline" data-width="500" data-height="500"
                                 data-adapt-container-width="true" data-small-header="false" data-hide-cover="false"
@@ -421,11 +423,11 @@
                             </p>
                         </div>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto items-stretch">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto items-stretch">
                         <!-- Lesson 1: What do you do in summer? -->
-                        <div class="arcade-cabinet bouncy-hover reveal-on-scroll flex flex-col h-full w-full active">
+                        <div class="arcade-cabinet featured bouncy-hover reveal-on-scroll flex flex-col h-full w-full active">
                             <div class="flex flex-col h-full gap-6">
-                                <div class="arcade-cabinet-screen w-full overflow-hidden rounded-xl border-4 border-black"
+                                <div class="arcade-cabinet-screen w-full overflow-hidden rounded-xl border-4 border-black relative shimmer-effect"
                                     style="height: 500px;"><img alt="Lesson 1: What do you do in summer?"
                                         class="w-full h-full object-cover"
                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7euITDaoPVVRZgBO24uHQO7OByooDNTpgE97-7m6B-8-rw9-U3yK8DqhMetLuzYjJ1fOKlaw9y5B7TTDiVlgkZHiEvowV6OA4EUVzy7fX2TgJ7D4TrWq5DYcXDPpY7gRi7AdRU5DT7LTQGmwMwU0DJXTZ_ix6G_7vKgpDdq4I6wMGJrBKh94MTsbZFY1wktPDKzG9Ho7fHewfbTkkKwBe4ONTAD0W1LGkGjsDpCA1Qu8dLqf7_e_7yovCTdarfKJMSFfhwbwCb4E">
@@ -455,6 +457,37 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Lesson 2: Body Parts and Their Functions -->
+                        <div class="arcade-cabinet pink bouncy-hover reveal-on-scroll flex flex-col h-full w-full active">
+                            <div class="flex flex-col h-full gap-6">
+                                <div class="arcade-cabinet-screen w-full overflow-hidden rounded-xl border-4 border-black relative shimmer-effect"
+                                    style="height: 500px;"><img alt="Lesson 2: Body Parts and Their Functions"
+                                        class="w-full h-full object-cover"
+                                        src="img/lesson_body_parts.png">
+                                </div>
+                                <div class="flex-1 flex flex-col justify-between">
+                                    <div>
+                                        <h3 class="text-headline-md font-bold text-white mb-2">
+                                            <span class="en:inline vi:hidden">Lesson 2: Body Parts and Their Functions</span>
+                                            <span class="vi:inline en:hidden">Bài học 2: Các bộ phận cơ thể và chức năng của chúng</span>
+                                        </h3>
+                                        <p class="text-white/80 font-medium">
+                                            <span class="en:inline vi:hidden">Explore the different parts of the human body and learn about their unique functions!</span>
+                                            <span class="vi:inline en:hidden">Khám phá các bộ phận khác nhau của cơ thể người và tìm hiểu về các chức năng độc đáo của chúng!</span>
+                                        </p>
+                                    </div>
+                                    <div class="mt-6">
+                                        <a class="w-full bg-[#ec4899] text-white py-3 px-6 rounded-xl font-bold squishy-button shimmer-effect shadow-xl flex items-center justify-center gap-2 border-b-4 border-[#9d174d] magnetic-button"
+                                            href="https://quizlet.com/vn/1191520896/lesson-2-body-parts-and-their-functions-flash-cards/"
+                                            style="transform: translate(0px) scale(1);" target="_blank">
+                                            <span class="en:inline vi:hidden">EXPLORE BODY</span>
+                                            <span class="vi:inline en:hidden">KHÁM PHÁ CƠ THỂ</span>
+                                            <span class="material-symbols-outlined text-[18px]">accessibility</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- Lesson 1: Water Safety -->
                         <div class="group bg-tertiary-container rounded-[2.5rem] p-8 border-4 rubiks-yellow flex flex-col justify-between bouncy-hover reveal-on-scroll h-full w-full active"
                             style="transition-delay: 0.1s;">
@@ -472,7 +505,7 @@
                                     <span class="en:inline vi:hidden">Lesson 1: Water Safety</span>
                                     <span class="vi:inline en:hidden">Bài học 1: An toàn Nước</span>
                                 </h3>
-                                <div class="arcade-cabinet-screen w-full overflow-hidden rounded-xl border-4 border-black mb-6"
+                                <div class="arcade-cabinet-screen w-full overflow-hidden rounded-xl border-4 border-black mb-6 relative shimmer-effect"
                                     style="height: 500px;"><img alt="Lesson 1: Water Safety"
                                         class="w-full h-full object-cover"
                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc16XqjVcxQFDKUjrFyNvrCI1xwsu4czYHQU4tAE0lFkiytkyzpBUmeC9vPkwE9tUR-UgKW0VG6YE7h6RWUjMDNfslBhxutE0zOtsEx-yUwf5j5hbcJbVRr1ao-dmlDxLmDQ15Sw3xgBSyoijDhPDmQfLk70Tp1K-Oq846JoGmoRg-G1saqvni91nbg11Ft_Nsy3gC9GGQvaYnx3er0DgZqYUPB6Bl7TvTACThe2aN69nkjfW8Eow7By85jgQsBW2kn457EHa1YbU">
@@ -485,7 +518,7 @@
                                 </p>
                             </div>
                             <a href="https://wayground.com/pro/join?gc=30463098" target="_blank"
-                                class="mt-8 bg-on-tertiary-fixed text-tertiary-fixed py-4 rounded-2xl font-bold squishy-button shadow-xl flex items-center justify-center gap-2 magnetic-button"
+                                class="mt-8 bg-on-tertiary-fixed text-tertiary-fixed py-4 rounded-2xl font-bold squishy-button shimmer-effect shadow-xl flex items-center justify-center gap-2 magnetic-button"
                                 style="transform: translate(0px) scale(1);">
                                 <span class="en:inline vi:hidden">Play Now</span>
                                 <span class="vi:inline en:hidden">Chơi Ngay</span>
@@ -509,7 +542,7 @@
                                     <span class="en:inline vi:hidden">Lesson 1: Summer Time Quiz</span>
                                     <span class="vi:inline en:hidden">Bài học 1: Đố vui Mùa hè</span>
                                 </h3>
-                                <div class="arcade-cabinet-screen w-full overflow-hidden rounded-xl border-4 border-black mb-6"
+                                <div class="arcade-cabinet-screen w-full overflow-hidden rounded-xl border-4 border-black mb-6 relative shimmer-effect"
                                     style="height: 500px;"><img alt="Lesson 1: Summer Time Quiz"
                                         class="w-full h-full object-cover"
                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIIC_f2Ha_Vj0GJG9qu0e_WHcfG7AmjKN5pk7fUYKE4NqWeQSta_BnuShw1u5VZ5kVy4876w-myEo78XCbAU2gp-L4jyC13xGGz1yHbVCHYadr8wEd1wnhZbI0Wxyx1CMLW_PQ4uRSewTPXyol1sMGy1jxamSrNIb_Tjz4HlAuekKcy9RQE7sHgz4ZqvKQb4GiXprsj3WqacqhNLqVoR3pXv12CuRdurHglzQqMq6-WgvQlrHjYPRS_CzpXnu72uQoJ4Kkvu-ERcQ">
@@ -522,10 +555,80 @@
                                 </p>
                             </div>
                             <a href="https://wayground.com/pro/join?gc=16241786" target="_blank"
-                                class="mt-8 bg-white text-[#006c49] py-4 rounded-2xl font-bold squishy-button shadow-xl flex items-center justify-center gap-2 magnetic-button"
+                                class="mt-8 bg-white text-[#006c49] py-4 rounded-2xl font-bold squishy-button shimmer-effect shadow-xl flex items-center justify-center gap-2 magnetic-button"
                                 style="transform: translate(0px) scale(1);">
-                                <span class="en:inline vi:hidden">Start Quiz</span>
-                                <span class="vi:inline en:hidden">Bắt đầu Đố vui</span>
+                                <span class="en:inline vi:hidden">SUMMER CHALLENGE</span>
+                                <span class="vi:inline en:hidden">THỬ THÁCH MÙA HÈ</span>
+                                <span class="material-symbols-outlined">wb_sunny</span>
+                            </a>
+                        </div>
+                        <!-- Lesson 3: Germs -->
+                        <div class="group bg-[#0046ad] rounded-[2.5rem] p-8 border-4 rubiks-blue flex flex-col justify-between bouncy-hover reveal-on-scroll h-full w-full active"
+                            style="transition-delay: 0.3s;">
+                            <div>
+                                <div class="flex justify-between items-start mb-6">
+                                    <span
+                                        class="bg-[#001847] text-white px-4 py-1 rounded-full text-label-sm font-bold uppercase">
+                                        <span class="en:inline vi:hidden">Quiz</span>
+                                        <span class="vi:inline en:hidden">Đố vui</span>
+                                    </span>
+                                    <span
+                                        class="material-symbols-outlined text-[#dae2ff] group-hover:scale-125 transition-transform">bug_report</span>
+                                </div>
+                                <h3 class="text-headline-md font-bold text-white mb-4">
+                                    <span class="en:inline vi:hidden">Lesson 3: Germs</span>
+                                    <span class="vi:inline en:hidden">Bài học 3: Vi khuẩn</span>
+                                </h3>
+                                <div class="arcade-cabinet-screen w-full overflow-hidden rounded-xl border-4 border-black mb-6 relative shimmer-effect"
+                                    style="height: 500px;"><img alt="Lesson 3: Germs"
+                                        class="w-full h-full object-cover"
+                                        src="img/lesson_germs.png">
+                                </div>
+                                <p class="text-white/80 font-medium">
+                                    <span class="en:inline vi:hidden">Discover the world of microbes and learn how to keep yourself safe from germs!</span>
+                                    <span class="vi:inline en:hidden">Khám phá thế giới vi sinh vật và tìm hiểu cách bảo vệ bản thân khỏi vi khuẩn!</span>
+                                </p>
+                            </div>
+                            <a href="https://quizlet.com/vn/1191535890/germs-flash-cards/?funnelUUID=7024f279-bbd1-47b5-a4aa-ab0fc9e86167" target="_blank"
+                                class="mt-8 bg-white text-[#0046ad] py-4 rounded-2xl font-bold squishy-button shimmer-effect shadow-xl flex items-center justify-center gap-2 magnetic-button"
+                                style="transform: translate(0px) scale(1);">
+                                <span class="en:inline vi:hidden">FIGHT GERMS</span>
+                                <span class="vi:inline en:hidden">DIỆT VI TRÙNG</span>
+                                <span class="material-symbols-outlined">shield</span>
+                            </a>
+                        </div>
+                        <!-- Lesson 2: Body Quiz -->
+                        <div class="group bg-[#bb0026] rounded-[2.5rem] p-8 border-4 rubiks-red flex flex-col justify-between bouncy-hover reveal-on-scroll h-full w-full active"
+                            style="transition-delay: 0.4s;">
+                            <div>
+                                <div class="flex justify-between items-start mb-6">
+                                    <span
+                                        class="bg-[#410007] text-[#ffb3b1] px-4 py-1 rounded-full text-label-sm font-bold uppercase">
+                                        <span class="en:inline vi:hidden">Quiz</span>
+                                        <span class="vi:inline en:hidden">Đố vui</span>
+                                    </span>
+                                    <span
+                                        class="material-symbols-outlined text-[#ffb3b1] group-hover:scale-125 transition-transform">favorite</span>
+                                </div>
+                                <h3 class="text-headline-md font-bold text-white mb-4">
+                                    <span class="en:inline vi:hidden">Lesson 2: Body Quiz</span>
+                                    <span class="vi:inline en:hidden">Bài học 2: Đố vui Cơ thể</span>
+                                </h3>
+                                <div class="arcade-cabinet-screen w-full overflow-hidden rounded-xl border-4 border-black mb-6 relative shimmer-effect"
+                                    style="height: 500px;"><img alt="Lesson 2: Body Quiz"
+                                        class="w-full h-full object-cover"
+                                        src="img/lesson_body_quiz.png">
+                                </div>
+                                <p class="text-white/80 font-medium">
+                                    <span class="en:inline vi:hidden">Test your knowledge about the human body systems and functions in this interactive quiz!</span>
+                                    <span class="vi:inline en:hidden">Kiểm tra kiến thức của bạn về các hệ cơ quan và chức năng của cơ thể người trong trò đố vui tương tác này!</span>
+                                </p>
+                            </div>
+                            <a href="https://wayground.com/join/quiz/6a3fc48c00eeaf36fa30d746/start?studentShare=true" target="_blank"
+                                class="mt-8 bg-white text-[#bb0026] py-4 rounded-2xl font-bold squishy-button shimmer-effect shadow-xl flex items-center justify-center gap-2 magnetic-button"
+                                style="transform: translate(0px) scale(1);">
+                                <span class="en:inline vi:hidden">START BODY QUIZ</span>
+                                <span class="vi:inline en:hidden">BẮT ĐẦU ĐỐ VUI</span>
                                 <span class="material-symbols-outlined">rocket_launch</span>
                             </a>
                         </div>
@@ -538,27 +641,12 @@
                 <div class="flex flex-col items-center md:items-start gap-4">
                     <span class="text-headline-md font-headline-md text-white">Rubik</span>
                     <p class="text-body-md font-medium text-white/90 text-center md:text-left">
-                        <span class="en:inline vi:hidden">© 2024 Rubik Adventure. Made with curiosity!</span>
-                        <span class="vi:inline en:hidden">© 2024 Rubik Adventure. Được tạo ra với sự tò mò!</span>
+                        <span class="en:inline vi:hidden">© 2026 Rubik Team. Made with curiosity!</span>
+                        <span class="vi:inline en:hidden">© 2026 Rubik Team. Tạo ra với sự tò mò!</span>
                     </p>
                 </div>
                 <nav class="flex flex-wrap justify-center gap-8">
-                    <a class="text-white hover:underline transition-colors font-bold" href="#">
-                        <span class="en:inline vi:hidden">Privacy Policy</span>
-                        <span class="vi:inline en:hidden">Chính sách Bảo mật</span>
-                    </a>
-                    <a class="text-white hover:underline transition-colors font-bold" href="#">
-                        <span class="en:inline vi:hidden">Safety Center</span>
-                        <span class="vi:inline en:hidden">Trung tâm An toàn</span>
-                    </a>
-                    <a class="text-white hover:underline transition-colors font-bold" href="#">
-                        <span class="en:inline vi:hidden">Parent Guide</span>
-                        <span class="vi:inline en:hidden">Hướng dẫn Phụ huynh</span>
-                    </a>
-                    <a class="text-white hover:underline transition-colors font-bold" href="#">
-                        <span class="en:inline vi:hidden">Help</span>
-                        <span class="vi:inline en:hidden">Trợ giúp</span>
-                    </a>
+
                 </nav>
             </footer>
         </div>

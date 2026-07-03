@@ -370,7 +370,12 @@ body {
     box-shadow: 0 0 0 6px #410007, 0 20px 50px rgba(0, 0, 0, 0.5);
 }
 
-.arcade-cabinet::before {
+.arcade-cabinet.pink {
+    border-color: #ec4899;
+    box-shadow: 0 0 0 6px #9d174d, 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.arcade-cabinet.featured::before {
     content: 'FEATURED LESSON';
     position: absolute;
     top: -24px;
