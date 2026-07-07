@@ -82,46 +82,34 @@
         <div class="sparkle" style="left: 23.6665%; top: 95.8683%; animation-delay: 2.91666s;"></div>
         <div class="sparkle" style="left: 29.1823%; top: 21.801%; animation-delay: 0.800954s;"></div>
     </div>
-    <div id="bg-canvas">
-        <div class="floating-shape bg-[#0046ad] w-[40vw] h-[40vw] rounded-full" data-speed="0.02"
-            style="transform: translate3d(7.44px, 46.22px, 0px);"></div>
-        <div class="floating-shape bg-[#e61335] w-[45vw] h-[45vw] rounded-full" data-speed="0.015"
-            style="transform: translate3d(5.58px, 34.665px, 0px);"></div>
-        <div class="floating-shape bg-[#caa800] w-[30vw] h-[30vw] rounded-full" data-speed="0.025"
-            style="transform: translate3d(9.3px, 57.775px, 0px);"></div>
-        <div class="floating-shape bg-[#006c49] w-[25vw] h-[25vw] rounded-full" data-speed="0.01"
-            style="transform: translate3d(3.72px, 23.11px, 0px);"></div>
-    </div>
+
     <header
-        class="fixed top-0 left-0 w-full px-margin-mobile md:px-margin-desktop bg-surface border-b border-surface-variant z-50 transition-all duration-500 grid grid-cols-2 md:grid-cols-3 items-center h-20 shadow-sm">
+        class="fixed top-0 left-0 w-full px-margin-mobile md:px-margin-desktop bg-[#fcee0a] border-b border-[#dcd000] z-50 transition-all duration-500 grid grid-cols-2 md:grid-cols-3 items-center h-20 shadow-sm">
         <div class="items-center contents">
-            <a class="text-headline-md sm:text-headline-lg font-headline-lg text-primary hover:scale-110 transition-transform"
+            <a class="text-headline-md sm:text-headline-lg font-black tracking-wider uppercase hover:scale-105 transition-transform"
                 href="#">
-                <span class="rubik-char" style="color: #e53935; animation-delay: 0s">R</span>
-                <span class="rubik-char" style="color: #1e88e5; animation-delay: 0.1s">U</span>
-                <span class="rubik-char" style="color: #fdd835; animation-delay: 0.2s">B</span>
-                <span class="rubik-char" style="color: #43a047; animation-delay: 0.3s">I</span>
-                <span class="rubik-char" style="color: #fb8c00; animation-delay: 0.4s">K</span>
+                <span style="color: #e53935">R</span>
+                <span style="color: #1e88e5">U</span>
+                <span style="color: #fdd835">B</span>
+                <span style="color: #43a047">I</span>
+                <span style="color: #fb8c00">K</span>
             </a>
-            <nav class="hidden md:flex gap-6 items-center justify-self-center" id="main-nav">
-                <a class="nav-item text-on-surface-variant font-medium hover:bg-primary/10 hover:scale-105 transition-all duration-300 px-3 py-2 rounded-lg text-label-lg nav-link-active"
-                    href="#hero">
+            <nav class="hidden md:flex gap-4 items-center justify-self-center" id="main-nav">
+                <a class="nav-item text-black font-bold text-label-lg nav-link-active" href="#hero">
                     <span class="en:inline vi:hidden">Home</span>
                     <span class="vi:inline en:hidden">Trang chủ</span>
                 </a>
-                <a class="nav-item text-on-surface-variant font-medium hover:bg-primary/10 hover:scale-105 transition-all duration-300 px-3 py-2 rounded-lg text-label-lg"
-                    href="#news">
+                <a class="nav-item text-black font-bold text-label-lg" href="#news">
                     <span class="en:inline vi:hidden">News</span>
                     <span class="vi:inline en:hidden">Tin tức</span>
                 </a>
-                <a class="nav-item text-on-surface-variant font-medium hover:bg-primary/10 hover:scale-105 transition-all duration-300 px-3 py-2 rounded-lg text-label-lg"
-                    href="#playground">
+                <a class="nav-item text-black font-bold text-label-lg" href="#playground">
                     <span class="en:inline vi:hidden">Playground</span>
                     <span class="vi:inline en:hidden">Sân chơi</span>
                 </a>
             </nav>
             <button id="lang-toggle"
-                class="justify-self-end bg-primary/10 hover:bg-primary/20 text-primary font-bold px-3 sm:px-4 py-2 rounded-xl transition-all duration-300 push-button cursor-pointer flex items-center gap-1.5 sm:gap-2 text-[14px] sm:text-base">
+                class="justify-self-end bg-[#fdd835] border-2 border-black hover:bg-[#facc15] text-black font-bold px-3 sm:px-4 py-2 rounded-xl transition-all duration-300 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none cursor-pointer flex items-center gap-1.5 sm:gap-2 text-[14px] sm:text-base">
                 <span class="material-symbols-outlined text-[20px]">language</span>
                 <span class="hidden sm:inline">
                     <span class="en:inline vi:hidden">Tiếng Việt</span>
@@ -188,21 +176,10 @@
                                     class="rubik-char" style="color: #43a047; text-shadow: 2px 2px 0 #191b22;">!</span>
                             </h1>
                             <p
-                                class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl mx-auto reveal-on-scroll active">
+                                class="font-body-lg text-body-lg text-white mb-12 max-w-2xl mx-auto reveal-on-scroll active">
                                 Dive into the new Interactive Playground and discover exciting games designed to make
                                 learning an adventure.
                             </p>
-                            <div class="flex flex-wrap justify-center gap-6 reveal-on-scroll active"
-                                style="transition-delay: 0.1s">
-                                <a class="bg-primary text-on-primary px-10 py-4 rounded-2xl font-bold text-lg push-button shimmer-effect magnetic-button flex items-center gap-2"
-                                    href="#playground" style="transform: translate(0px) scale(1);">
-                                    Enter Playground <span class="material-symbols-outlined">rocket_launch</span>
-                                </a>
-                                <a class="bg-surface-container-highest text-primary px-10 py-4 rounded-2xl font-bold text-lg border-2 border-primary-container/20 hover:bg-primary-container/10 transition-colors push-button magnetic-button"
-                                    href="#news" style="transform: translate(0px) scale(1);">
-                                    Check Updates
-                                </a>
-                            </div>
                         </div>
                         <div class="vi:block en:hidden">
                             <h1 class="font-display text-display text-on-background mb-6">
@@ -277,21 +254,10 @@
                                     style="color: #e53935; text-shadow: 2px 2px 0 #191b22; animation-delay: 1.5s">!</span>
                             </h1>
                             <p
-                                class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl mx-auto reveal-on-scroll active">
+                                class="font-body-lg text-body-lg text-white mb-12 max-w-2xl mx-auto reveal-on-scroll active">
                                 Hãy đắm mình vào Sân chơi Tương tác mới và khám phá các trò chơi thú vị giúp việc học
                                 trở thành một cuộc phiêu lưu.
                             </p>
-                            <div class="flex flex-wrap justify-center gap-6 reveal-on-scroll active"
-                                style="transition-delay: 0.1s">
-                                <a class="bg-primary text-on-primary px-10 py-4 rounded-2xl font-bold text-lg push-button shimmer-effect magnetic-button flex items-center gap-2"
-                                    href="#playground" style="transform: translate(0px) scale(1);">
-                                    Vào Sân Chơi <span class="material-symbols-outlined">rocket_launch</span>
-                                </a>
-                                <a class="bg-surface-container-highest text-primary px-10 py-4 rounded-2xl font-bold text-lg border-2 border-primary-container/20 hover:bg-primary-container/10 transition-colors push-button magnetic-button"
-                                    href="#news" style="transform: translate(0px) scale(1);">
-                                    Xem Cập Nhật
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </section>
@@ -299,7 +265,7 @@
                 <section class="py-16 px-margin-mobile md:px-margin-desktop antigravity-element" id="news"
                     style="transform: translate3d(0px, -4.52253px, 0px) rotateX(3.76538deg) rotateY(-2.325deg);">
                     <div class="flex justify-center relative items-end mb-12 reveal-on-scroll active">
-                        <div>
+                        <div class="text-center">
                             <h2 class="font-headline-lg text-headline-lg text-on-background mb-2">
                                 <span class="en:inline vi:hidden">
                                     <span class="rubik-char"
@@ -344,25 +310,226 @@
                             </p>
                         </div>
                     </div>
-                    <div class="w-full max-w-[500px] mx-auto flex flex-col">
+                    <div
+                        class="w-full max-w-[500px] mx-auto flex flex-col bg-white border-4 border-black rounded-3xl overflow-hidden shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all duration-300">
                         <div
-                            class="bg-surface-container-low px-6 py-4 rounded-t-2xl border-x-4 border-t-4 border-primary/20 flex items-center justify-between w-full">
-                            <h3 class="font-bold text-primary flex items-center gap-2">
-                                <span class="material-symbols-outlined">rss_feed</span>
+                            class="bg-[#faf8ff] px-6 py-4 border-b-4 border-black flex items-center justify-between w-full">
+                            <h3 class="font-bold text-black flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary font-bold">rss_feed</span>
                                 <span class="en:inline vi:hidden">Official Feed</span>
                                 <span class="vi:inline en:hidden">Bảng tin Chính thức</span>
                             </h3>
-                            <span class="text-label-sm text-on-surface-variant font-bold uppercase tracking-wider">
+                            <span class="text-label-sm text-on-surface-variant font-black uppercase tracking-wider">
                                 <span class="en:inline vi:hidden">Real-time Updates</span>
                                 <span class="vi:inline en:hidden">Cập nhật Thời gian thực</span>
                             </span>
                         </div>
-                        <div
-                            class="w-full border-x-4 border-b-4 border-primary/20 rounded-b-2xl overflow-hidden bg-white flex justify-center">
+                        <div class="w-full overflow-hidden bg-white flex justify-center p-4">
                             <div class="fb-page" data-href="https://www.facebook.com/npo.rubikproject"
                                 data-tabs="timeline" data-width="500" data-height="500"
                                 data-adapt-container-width="true" data-small-header="false" data-hide-cover="false"
                                 data-show-facepile="true">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Introduction Preview Document -->
+                    <div class="max-w-5xl mx-auto mt-16 reveal-on-scroll">
+                        <div
+                            class="bg-white border-4 border-black rounded-3xl p-6 md:p-12 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] relative overflow-hidden">
+                            <!-- Playful corner tag -->
+                            <div
+                                class="absolute top-0 right-0 bg-[#fdd835] border-b-4 border-l-4 border-black px-6 py-2 font-bold text-sm uppercase tracking-wider hidden md:block">
+                                Tài liệu dự án
+                            </div>
+
+                            <!-- Document Header -->
+                            <div class="border-b-4 border-black pb-6 mb-8 text-left">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span
+                                        class="inline-block w-3 h-3 rounded-full bg-[#e53935] border-2 border-black"></span>
+                                    <span
+                                        class="inline-block w-3 h-3 rounded-full bg-[#1e88e5] border-2 border-black"></span>
+                                    <span
+                                        class="inline-block w-3 h-3 rounded-full bg-[#43a047] border-2 border-black"></span>
+                                    <span class="text-sm font-bold uppercase text-[#1e88e5] ml-2">Giới thiệu chính
+                                        thức</span>
+                                </div>
+                                <h3 class="text-2xl md:text-3xl font-black text-black leading-tight uppercase">
+                                    RUBIK PROJECT – KHÔNG GIAN ĐỂ MỖI EM NHỎ ĐỀU ĐƯỢC TỎA SÁNG
+                                </h3>
+                                <p
+                                    class="text-sm font-bold text-on-surface-variant mt-2 flex items-center gap-2 flex-wrap">
+                                    <span
+                                        class="bg-[#1e88e5]/10 text-[#1e88e5] px-3 py-1 rounded-md border border-[#1e88e5]/20">📅
+                                        Thành lập: 02/04/2026</span>
+                                    <span
+                                        class="bg-[#43a047]/10 text-[#43a047] px-3 py-1 rounded-md border border-[#43a047]/20">📍
+                                        Địa điểm: Nhà văn hóa địa phương</span>
+                                </p>
+                            </div>
+
+                            <!-- Document Body -->
+                            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start text-left">
+                                <!-- Main Content Area (left/middle) -->
+                                <div
+                                    class="lg:col-span-8 flex flex-col gap-6 text-on-surface font-medium leading-relaxed">
+                                    <p
+                                        class="text-lg font-bold text-black border-l-4 border-[#e53935] pl-4 bg-surface-container-low/50 py-3 rounded-r-xl">
+                                        Mỗi mùa hè là một khoảng thời gian quý giá để trẻ em được khám phá, trải nghiệm
+                                        và phát triển những kỹ năng mới. Tuy nhiên, với nhiều em nhỏ, đặc biệt là tại
+                                        các khu dân cư, cơ hội được tiếp xúc và thực hành tiếng Anh trong môi trường tự
+                                        nhiên vẫn còn khá hạn chế. Việc học chủ yếu diễn ra trong lớp học khiến nhiều em
+                                        còn e dè, thiếu tự tin khi giao tiếp bằng tiếng Anh.
+                                    </p>
+                                    <p>
+                                        Đó cũng là lý do <strong>RUBIK Project – Raising Unique Brilliance In
+                                            Kids</strong> ra đời. <strong>RUBIK</strong> là dự án cộng đồng phi lợi
+                                        nhuận hướng tới việc xây dựng một môi trường học tập cởi mở, nơi trẻ em từ 7–12
+                                        tuổi có thể vừa học, vừa chơi, vừa phát triển khả năng sử dụng tiếng Anh thông
+                                        qua các hoạt động tương tác, trò chơi, làm việc nhóm và trải nghiệm thực tế. Dự
+                                        án diễn ra vào tối thứ Năm hằng tuần tại Nhà văn hóa địa phương.
+                                    </p>
+
+                                    <!-- Section 1 -->
+                                    <div class="mt-4">
+                                        <h4 class="text-xl font-black text-black mb-3 flex items-center gap-2">
+                                            <span class="w-2 h-6 bg-[#1e88e5] inline-block rounded-full"></span>
+                                            Vì sao RUBIK được triển khai?
+                                        </h4>
+                                        <div class="flex flex-col gap-4">
+                                            <p>
+                                                Trong bối cảnh Việt Nam đang từng bước hiện thực hóa mục tiêu đưa tiếng
+                                                Anh trở thành ngôn ngữ thứ hai trong trường học, việc tạo thêm những môi
+                                                trường học tập ngoài lớp học là vô cùng cần thiết.
+                                            </p>
+                                            <p>
+                                                Vì vậy, <strong>Đội ngũ Ban Điều hành RUBIK Project</strong> – gồm các
+                                                bạn sinh viên sinh sống và học tập trên địa bàn thành phố Hà Nội, quyết
+                                                tâm cùng phối hợp với Chính quyền địa phương và các đơn vị hỗ trợ thành
+                                                lập một dự án cộng đồng với mong muốn tạo ra sân chơi mùa hè cho trẻ em
+                                                địa phương.
+                                            </p>
+                                            <p>
+                                                RUBIK Project với hoạt động chủ đạo là lớp học tiếng Anh kết hợp kĩ năng
+                                                sống <strong>“Lumos Summer Class”</strong> hướng tới mục tiêu mở ra một
+                                                không gian học tập, giao lưu bổ ích cho các em nhỏ. Thông qua mỗi tuần
+                                                học, các bạn nhỏ sẽ có cơ hội được trau dồi kĩ năng ngoại ngữ, đồng thời
+                                                thúc đẩy các kĩ năng cơ bản để sẵn sàng hội nhập trong tương lai.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Section 2 -->
+                                    <div class="mt-4">
+                                        <h4 class="text-xl font-black text-black mb-3 flex items-center gap-2">
+                                            <span class="w-2 h-6 bg-[#43a047] inline-block rounded-full"></span>
+                                            RUBIK hướng tới điều gì?
+                                        </h4>
+                                        <div class="flex flex-col gap-4">
+                                            <p>
+                                                Thông qua chuỗi hoạt động trong suốt mùa hè, RUBIK mong muốn mang lại
+                                                nhiều giá trị hơn một lớp học tiếng Anh thông thường:
+                                            </p>
+                                            <ul class="list-none flex flex-col gap-3 pl-2">
+                                                <li class="flex gap-3 items-start">
+                                                    <span
+                                                        class="material-symbols-outlined text-[#e53935] font-bold mt-0.5">check_circle</span>
+                                                    <span>Tạo ra một môi trường để các em mạnh dạn sử dụng tiếng Anh
+                                                        trong giao tiếp hằng ngày, từ đó cải thiện khả năng phản xạ và
+                                                        xây dựng sự tự tin khi sử dụng ngôn ngữ.</span>
+                                                </li>
+                                                <li class="flex gap-3 items-start">
+                                                    <span
+                                                        class="material-symbols-outlined text-[#1e88e5] font-bold mt-0.5">check_circle</span>
+                                                    <span>Là một sân chơi lành mạnh giúp các em kết nối bạn bè, phát
+                                                        triển kỹ năng làm việc nhóm, tư duy sáng tạo và tinh thần chủ
+                                                        động trong học tập.</span>
+                                                </li>
+                                                <li class="flex gap-3 items-start">
+                                                    <span
+                                                        class="material-symbols-outlined text-[#43a047] font-bold mt-0.5">check_circle</span>
+                                                    <span>Góp phần lan tỏa văn hóa học tập tích cực trong cộng đồng, xây
+                                                        dựng hình ảnh địa phương năng động, văn minh và luôn khuyến
+                                                        khích sự phát triển của thế hệ trẻ.</span>
+                                                </li>
+                                                <li class="flex gap-3 items-start">
+                                                    <span
+                                                        class="material-symbols-outlined text-[#fb8c00] font-bold mt-0.5">check_circle</span>
+                                                    <span>Đặc biệt, toàn bộ hoạt động của RUBIK không chỉ dừng lại ở
+                                                        việc tổ chức các buổi sinh hoạt hè. Sau khi kết thúc dự án, ban
+                                                        tổ chức đặt mục tiêu huy động quỹ để mua đồ dùng học tập, trao
+                                                        tặng cho các em nhỏ có hoàn cảnh khó khăn trên địa bàn phường
+                                                        Đức Thắng (nay là phường Đông Ngạc) trước thềm năm học
+                                                        mới.</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Section 3 -->
+                                    <div class="mt-4">
+                                        <h4 class="text-xl font-black text-black mb-3 flex items-center gap-2">
+                                            <span class="w-2 h-6 bg-[#fb8c00] inline-block rounded-full"></span>
+                                            Mỗi em nhỏ đều có cách tỏa sáng của riêng mình
+                                        </h4>
+                                        <div class="flex flex-col gap-4">
+                                            <p>
+                                                Tên gọi <strong>RUBIK – Raising Unique Brilliance In Kids</strong> mang
+                                                theo niềm tin rằng mỗi đứa trẻ đều sở hữu những điểm mạnh và tiềm năng
+                                                riêng. Chỉ cần có một môi trường phù hợp, các em sẽ dần khám phá khả
+                                                năng của bản thân, tự tin thể hiện chính mình và không ngừng phát triển.
+                                            </p>
+                                            <p>
+                                                RUBIK không chỉ là một dự án dạy tiếng Anh, mà còn là hành trình đồng
+                                                hành cùng trẻ em trên con đường nuôi dưỡng sự tự tin, tinh thần học hỏi
+                                                và những kỹ năng cần thiết để sẵn sàng bước vào tương lai.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Side Media Gallery (right side) -->
+                                <div class="lg:col-span-4 flex flex-col gap-6 lg:sticky lg:top-24">
+                                    <!-- Image 1 -->
+                                    <div
+                                        class="relative w-full aspect-[4/3] rounded-2xl border-4 border-black overflow-hidden shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                                        <img src="img/about_rubik_1.jpg" alt="Hoạt động Rubik 1"
+                                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                                        <div
+                                            class="absolute bottom-0 left-0 right-0 bg-black/60 backdrop-blur-sm px-4 py-2 border-t-2 border-black">
+                                            <p class="text-xs font-bold text-white text-center">
+                                                Lớp học Lumos kết hợp kỹ năng sống
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Image 2 -->
+                                    <div
+                                        class="relative w-full aspect-[4/3] rounded-2xl border-4 border-black overflow-hidden shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                                        <img src="img/about_rubik_2.jpg" alt="Hoạt động Rubik 2"
+                                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                                        <div
+                                            class="absolute bottom-0 left-0 right-0 bg-black/60 backdrop-blur-sm px-4 py-2 border-t-2 border-black">
+                                            <p class="text-xs font-bold text-white text-center">
+                                                Trò chơi tương tác sôi nổi
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Image 3 -->
+                                    <div
+                                        class="relative w-full aspect-[4/3] rounded-2xl border-4 border-black overflow-hidden shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                                        <img src="img/about_rubik_3.jpg" alt="Hoạt động Rubik 3"
+                                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                                        <div
+                                            class="absolute bottom-0 left-0 right-0 bg-black/60 backdrop-blur-sm px-4 py-2 border-t-2 border-black">
+                                            <p class="text-xs font-bold text-white text-center">
+                                                Các em nhỏ hào hứng phát biểu
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -424,8 +591,249 @@
                         </div>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto items-stretch">
+                        <!-- Lesson 3: Snack Smart -->
+                        <div
+                            class="arcade-cabinet green featured bouncy-hover reveal-on-scroll flex flex-col h-full w-full active">
+                            <div class="flex flex-col h-full gap-6">
+                                <div class="arcade-cabinet-screen w-full overflow-hidden rounded-xl border-4 border-black relative shimmer-effect"
+                                    style="height: 500px;"><img alt="Lesson 3: Snack Smart"
+                                        class="w-full h-full object-cover" src="img/snacksmart.jpg">
+                                </div>
+                                <div class="flex-1 flex flex-col justify-between">
+                                    <div>
+                                        <h3 class="text-headline-md font-bold text-white mb-2">
+                                            <span class="en:inline vi:hidden">Lesson 3: Snack Smart</span>
+                                            <span class="vi:inline en:hidden">Bài học 3: Ăn uống thông minh</span>
+                                        </h3>
+                                        <p class="text-white/80 font-medium">
+                                            <span class="en:inline vi:hidden">Learn about healthy and unhealthy foods,
+                                                fruits, vegetables, and how to keep your body strong!</span>
+                                            <span class="vi:inline en:hidden">Tìm hiểu về thực phẩm lành mạnh và không
+                                                lành mạnh, trái cây, rau củ và cách giữ cho cơ thể bạn khỏe mạnh!</span>
+                                        </p>
+                                    </div>
+                                    <div class="mt-6">
+                                        <a class="w-full bg-[#43a047] text-white py-3 px-6 rounded-xl font-bold squishy-button shimmer-effect shadow-xl flex items-center justify-center gap-2 border-b-4 border-[#002e1f] magnetic-button"
+                                            href="https://quizlet.com/vn/1192996053/lesson-3-snack-smart-flash-cards/?i=76oyy6&amp;x=1jqt"
+                                            style="transform: translate(0px) scale(1);" target="_blank">
+                                            <span class="en:inline vi:hidden">START GAME</span>
+                                            <span class="vi:inline en:hidden">BẮT ĐẦU CHƠI</span>
+                                            <span class="material-symbols-outlined text-[18px]">nutrition</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Lesson 3: Healthy vs. Junk Food -->
+                        <div
+                            class="arcade-cabinet orange bouncy-hover reveal-on-scroll flex flex-col h-full w-full active">
+                            <div class="flex flex-col h-full gap-6">
+                                <div class="arcade-cabinet-screen w-full overflow-hidden rounded-xl border-4 border-black relative shimmer-effect"
+                                    style="height: 500px;"><img alt="Lesson 3: Healthy vs. Junk Food"
+                                        class="w-full h-full object-cover" src="img/healthyvsjunkfood.png">
+                                </div>
+                                <div class="flex-1 flex flex-col justify-between">
+                                    <div>
+                                        <h3 class="text-headline-md font-bold text-white mb-2">
+                                            <span class="en:inline vi:hidden">Lesson 3: Healthy vs Junk Food</span>
+                                            <span class="vi:inline en:hidden">Bài học 3: Lành mạnh vs Ăn vặt</span>
+                                        </h3>
+                                        <p class="text-white/80 font-medium">
+                                            <span class="en:inline vi:hidden">Sort different types of food into healthy
+                                                choices and junk food categories!</span>
+                                            <span class="vi:inline en:hidden">Phân loại các loại thực phẩm khác nhau vào
+                                                nhóm lành mạnh và ăn vặt!</span>
+                                        </p>
+                                    </div>
+                                    <div class="mt-6">
+                                        <a class="w-full bg-[#fb8c00] text-white py-3 px-6 rounded-xl font-bold squishy-button shimmer-effect shadow-xl flex items-center justify-center gap-2 border-b-4 border-[#5d3400] magnetic-button"
+                                            href="https://wordwall.net/vi/resource/115841819/heathy-food-vs-junk-food"
+                                            style="transform: translate(0px) scale(1);" target="_blank">
+                                            <span class="en:inline vi:hidden">SORT FOOD</span>
+                                            <span class="vi:inline en:hidden">PHÂN LOẠI</span>
+                                            <span class="material-symbols-outlined text-[18px]">fastfood</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Lesson 3: Vocabulary Game -->
+                        <div
+                            class="arcade-cabinet purple bouncy-hover reveal-on-scroll flex flex-col h-full w-full active">
+                            <div class="flex flex-col h-full gap-6">
+                                <div class="arcade-cabinet-screen w-full overflow-hidden rounded-xl border-4 border-black relative shimmer-effect"
+                                    style="height: 500px;"><img alt="Lesson 3: Vocabulary Game"
+                                        class="w-full h-full object-cover" src="img/vocabulary.jpg">
+                                </div>
+                                <div class="flex-1 flex flex-col justify-between">
+                                    <div>
+                                        <h3 class="text-headline-md font-bold text-white mb-2">
+                                            <span class="en:inline vi:hidden">Lesson 3: Vocabulary Game</span>
+                                            <span class="vi:inline en:hidden">Bài học 3: Trò chơi Từ vựng</span>
+                                        </h3>
+                                        <p class="text-white/80 font-medium">
+                                            <span class="en:inline vi:hidden">Match the snack smart vocabulary words
+                                                with their correct meanings!</span>
+                                            <span class="vi:inline en:hidden">Ghép các từ vựng ăn uống thông minh với ý
+                                                nghĩa chính xác của chúng!</span>
+                                        </p>
+                                    </div>
+                                    <div class="mt-6">
+                                        <a class="w-full bg-[#8e24aa] text-white py-3 px-6 rounded-xl font-bold squishy-button shimmer-effect shadow-xl flex items-center justify-center gap-2 border-b-4 border-[#3a004a] magnetic-button"
+                                            href="https://wordwall.net/vi/resource/115841527/lesson-3-vocabulary"
+                                            style="transform: translate(0px) scale(1);" target="_blank">
+                                            <span class="en:inline vi:hidden">MATCH WORDS</span>
+                                            <span class="vi:inline en:hidden">GHÉP TỪ VỰNG</span>
+                                            <span class="material-symbols-outlined text-[18px]">translate</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Lesson 3: Food Groups Game -->
+                        <div
+                            class="arcade-cabinet blue bouncy-hover reveal-on-scroll flex flex-col h-full w-full active">
+                            <div class="flex flex-col h-full gap-6">
+                                <div class="arcade-cabinet-screen w-full overflow-hidden rounded-xl border-4 border-black relative shimmer-effect"
+                                    style="height: 500px;"><img alt="Lesson 3: Food Groups Game"
+                                        class="w-full h-full object-cover" src="img/food-groups.png">
+                                </div>
+                                <div class="flex-1 flex flex-col justify-between">
+                                    <div>
+                                        <h3 class="text-headline-md font-bold text-white mb-2">
+                                            <span class="en:inline vi:hidden">Lesson 3: Food Groups</span>
+                                            <span class="vi:inline en:hidden">Bài học 3: Các nhóm thực phẩm</span>
+                                        </h3>
+                                        <p class="text-white/80 font-medium">
+                                            <span class="en:inline vi:hidden">Categorize food items into their correct
+                                                food groups!</span>
+                                            <span class="vi:inline en:hidden">Phân loại các mặt hàng thực phẩm vào đúng
+                                                nhóm thực phẩm!</span>
+                                        </p>
+                                    </div>
+                                    <div class="mt-6">
+                                        <a class="w-full bg-[#1e88e5] text-white py-3 px-6 rounded-xl font-bold squishy-button shimmer-effect shadow-xl flex items-center justify-center gap-2 border-b-4 border-[#001847] magnetic-button"
+                                            href="https://wordwall.net/vi/resource/115841326/lesson-3-food-groups"
+                                            style="transform: translate(0px) scale(1);" target="_blank">
+                                            <span class="en:inline vi:hidden">GROUP FOODS</span>
+                                            <span class="vi:inline en:hidden">PHÂN NHÓM</span>
+                                            <span class="material-symbols-outlined text-[18px]">category</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Lesson 2: Germs -->
+                        <div class="group bg-[#0046ad] rounded-[2.5rem] p-8 border-4 rubiks-blue flex flex-col justify-between bouncy-hover reveal-on-scroll h-full w-full active"
+                            style="transition-delay: 0.1s;">
+                            <div>
+                                <div class="flex justify-between items-start mb-6">
+                                    <span
+                                        class="bg-[#001847] text-white px-4 py-1 rounded-full text-label-sm font-bold uppercase">
+                                        <span class="en:inline vi:hidden">Quiz</span>
+                                        <span class="vi:inline en:hidden">Đố vui</span>
+                                    </span>
+                                    <span
+                                        class="material-symbols-outlined text-[#dae2ff] group-hover:scale-125 transition-transform">bug_report</span>
+                                </div>
+                                <h3 class="text-headline-md font-bold text-white mb-4">
+                                    <span class="en:inline vi:hidden">Lesson 2: Germs</span>
+                                    <span class="vi:inline en:hidden">Bài học 2: Vi khuẩn</span>
+                                </h3>
+                                <div class="arcade-cabinet-screen w-full overflow-hidden rounded-xl border-4 border-black mb-6 relative shimmer-effect"
+                                    style="height: 500px;"><img alt="Lesson 2: Germs" class="w-full h-full object-cover"
+                                        src="img/lesson_germs.png">
+                                </div>
+                                <p class="text-white/80 font-medium">
+                                    <span class="en:inline vi:hidden">Discover the world of microbes and learn how to
+                                        keep yourself safe from germs!</span>
+                                    <span class="vi:inline en:hidden">Khám phá thế giới vi sinh vật và tìm hiểu cách bảo
+                                        vệ bản thân khỏi vi khuẩn!</span>
+                                </p>
+                            </div>
+                            <a href="https://quizlet.com/vn/1191535890/germs-flash-cards/?funnelUUID=7024f279-bbd1-47b5-a4aa-ab0fc9e86167"
+                                target="_blank"
+                                class="mt-8 bg-white text-[#0046ad] py-4 rounded-2xl font-bold squishy-button shimmer-effect shadow-xl flex items-center justify-center gap-2 magnetic-button"
+                                style="transform: translate(0px) scale(1);">
+                                <span class="en:inline vi:hidden">FIGHT GERMS</span>
+                                <span class="vi:inline en:hidden">DIỆT VI TRÙNG</span>
+                                <span class="material-symbols-outlined">shield</span>
+                            </a>
+                        </div>
+                        <!-- Lesson 2: Body Parts and Their Functions -->
+                        <div
+                            class="arcade-cabinet pink bouncy-hover reveal-on-scroll flex flex-col h-full w-full active">
+                            <div class="flex flex-col h-full gap-6">
+                                <div class="arcade-cabinet-screen w-full overflow-hidden rounded-xl border-4 border-black relative shimmer-effect"
+                                    style="height: 500px;"><img alt="Lesson 2: Body Parts and Their Functions"
+                                        class="w-full h-full object-cover" src="img/lesson_body_parts.png">
+                                </div>
+                                <div class="flex-1 flex flex-col justify-between">
+                                    <div>
+                                        <h3 class="text-headline-md font-bold text-white mb-2">
+                                            <span class="en:inline vi:hidden">Lesson 2: Body Parts and Their
+                                                Functions</span>
+                                            <span class="vi:inline en:hidden">Bài học 2: Các bộ phận cơ thể và chức năng
+                                                của chúng</span>
+                                        </h3>
+                                        <p class="text-white/80 font-medium">
+                                            <span class="en:inline vi:hidden">Explore the different parts of the human
+                                                body and learn about their unique functions!</span>
+                                            <span class="vi:inline en:hidden">Khám phá các bộ phận khác nhau của cơ thể
+                                                người và tìm hiểu về các chức năng độc đáo của chúng!</span>
+                                        </p>
+                                    </div>
+                                    <div class="mt-6">
+                                        <a class="w-full bg-[#ec4899] text-white py-3 px-6 rounded-xl font-bold squishy-button shimmer-effect shadow-xl flex items-center justify-center gap-2 border-b-4 border-[#9d174d] magnetic-button"
+                                            href="https://quizlet.com/vn/1191520896/lesson-2-body-parts-and-their-functions-flash-cards/"
+                                            style="transform: translate(0px) scale(1);" target="_blank">
+                                            <span class="en:inline vi:hidden">EXPLORE BODY</span>
+                                            <span class="vi:inline en:hidden">KHÁM PHÁ CƠ THỂ</span>
+                                            <span class="material-symbols-outlined text-[18px]">accessibility</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Lesson 2: Body Quiz -->
+                        <div class="group bg-[#bb0026] rounded-[2.5rem] p-8 border-4 rubiks-red flex flex-col justify-between bouncy-hover reveal-on-scroll h-full w-full active"
+                            style="transition-delay: 0.2s;">
+                            <div>
+                                <div class="flex justify-between items-start mb-6">
+                                    <span
+                                        class="bg-[#410007] text-[#ffb3b1] px-4 py-1 rounded-full text-label-sm font-bold uppercase">
+                                        <span class="en:inline vi:hidden">Quiz</span>
+                                        <span class="vi:inline en:hidden">Đố vui</span>
+                                    </span>
+                                    <span
+                                        class="material-symbols-outlined text-[#ffb3b1] group-hover:scale-125 transition-transform">favorite</span>
+                                </div>
+                                <h3 class="text-headline-md font-bold text-white mb-4">
+                                    <span class="en:inline vi:hidden">Lesson 2: Body Quiz</span>
+                                    <span class="vi:inline en:hidden">Bài học 2: Đố vui Cơ thể</span>
+                                </h3>
+                                <div class="arcade-cabinet-screen w-full overflow-hidden rounded-xl border-4 border-black mb-6 relative shimmer-effect"
+                                    style="height: 500px;"><img alt="Lesson 2: Body Quiz"
+                                        class="w-full h-full object-cover" src="img/lesson_body_quiz.png">
+                                </div>
+                                <p class="text-white/80 font-medium">
+                                    <span class="en:inline vi:hidden">Test your knowledge about the human body systems
+                                        and functions in this interactive quiz!</span>
+                                    <span class="vi:inline en:hidden">Kiểm tra kiến thức của bạn về các hệ cơ quan và
+                                        chức năng của cơ thể người trong trò đố vui tương tác này!</span>
+                                </p>
+                            </div>
+                            <a href="https://wayground.com/join/quiz/6a3fc48c00eeaf36fa30d746/start?studentShare=true"
+                                target="_blank"
+                                class="mt-8 bg-white text-[#bb0026] py-4 rounded-2xl font-bold squishy-button shimmer-effect shadow-xl flex items-center justify-center gap-2 magnetic-button"
+                                style="transform: translate(0px) scale(1);">
+                                <span class="en:inline vi:hidden">START BODY QUIZ</span>
+                                <span class="vi:inline en:hidden">BẮT ĐẦU ĐỐ VUI</span>
+                                <span class="material-symbols-outlined">rocket_launch</span>
+                            </a>
+                        </div>
                         <!-- Lesson 1: What do you do in summer? -->
-                        <div class="arcade-cabinet featured bouncy-hover reveal-on-scroll flex flex-col h-full w-full active">
+                        <div class="arcade-cabinet bouncy-hover reveal-on-scroll flex flex-col h-full w-full active">
                             <div class="flex flex-col h-full gap-6">
                                 <div class="arcade-cabinet-screen w-full overflow-hidden rounded-xl border-4 border-black relative shimmer-effect"
                                     style="height: 500px;"><img alt="Lesson 1: What do you do in summer?"
@@ -457,40 +865,9 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Lesson 2: Body Parts and Their Functions -->
-                        <div class="arcade-cabinet pink bouncy-hover reveal-on-scroll flex flex-col h-full w-full active">
-                            <div class="flex flex-col h-full gap-6">
-                                <div class="arcade-cabinet-screen w-full overflow-hidden rounded-xl border-4 border-black relative shimmer-effect"
-                                    style="height: 500px;"><img alt="Lesson 2: Body Parts and Their Functions"
-                                        class="w-full h-full object-cover"
-                                        src="img/lesson_body_parts.png">
-                                </div>
-                                <div class="flex-1 flex flex-col justify-between">
-                                    <div>
-                                        <h3 class="text-headline-md font-bold text-white mb-2">
-                                            <span class="en:inline vi:hidden">Lesson 2: Body Parts and Their Functions</span>
-                                            <span class="vi:inline en:hidden">Bài học 2: Các bộ phận cơ thể và chức năng của chúng</span>
-                                        </h3>
-                                        <p class="text-white/80 font-medium">
-                                            <span class="en:inline vi:hidden">Explore the different parts of the human body and learn about their unique functions!</span>
-                                            <span class="vi:inline en:hidden">Khám phá các bộ phận khác nhau của cơ thể người và tìm hiểu về các chức năng độc đáo của chúng!</span>
-                                        </p>
-                                    </div>
-                                    <div class="mt-6">
-                                        <a class="w-full bg-[#ec4899] text-white py-3 px-6 rounded-xl font-bold squishy-button shimmer-effect shadow-xl flex items-center justify-center gap-2 border-b-4 border-[#9d174d] magnetic-button"
-                                            href="https://quizlet.com/vn/1191520896/lesson-2-body-parts-and-their-functions-flash-cards/"
-                                            style="transform: translate(0px) scale(1);" target="_blank">
-                                            <span class="en:inline vi:hidden">EXPLORE BODY</span>
-                                            <span class="vi:inline en:hidden">KHÁM PHÁ CƠ THỂ</span>
-                                            <span class="material-symbols-outlined text-[18px]">accessibility</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <!-- Lesson 1: Water Safety -->
                         <div class="group bg-tertiary-container rounded-[2.5rem] p-8 border-4 rubiks-yellow flex flex-col justify-between bouncy-hover reveal-on-scroll h-full w-full active"
-                            style="transition-delay: 0.1s;">
+                            style="transition-delay: 0.3s;">
                             <div>
                                 <div class="flex justify-between items-start mb-6">
                                     <span
@@ -527,7 +904,7 @@
                         </div>
                         <!-- Lesson 1: My Summer -->
                         <div class="group bg-[#006c49] rounded-[2.5rem] p-8 border-4 rubiks-green flex flex-col justify-between bouncy-hover reveal-on-scroll h-full w-full active"
-                            style="transition-delay: 0.2s;">
+                            style="transition-delay: 0.4s;">
                             <div>
                                 <div class="flex justify-between items-start mb-6">
                                     <span
@@ -562,81 +939,11 @@
                                 <span class="material-symbols-outlined">wb_sunny</span>
                             </a>
                         </div>
-                        <!-- Lesson 3: Germs -->
-                        <div class="group bg-[#0046ad] rounded-[2.5rem] p-8 border-4 rubiks-blue flex flex-col justify-between bouncy-hover reveal-on-scroll h-full w-full active"
-                            style="transition-delay: 0.3s;">
-                            <div>
-                                <div class="flex justify-between items-start mb-6">
-                                    <span
-                                        class="bg-[#001847] text-white px-4 py-1 rounded-full text-label-sm font-bold uppercase">
-                                        <span class="en:inline vi:hidden">Quiz</span>
-                                        <span class="vi:inline en:hidden">Đố vui</span>
-                                    </span>
-                                    <span
-                                        class="material-symbols-outlined text-[#dae2ff] group-hover:scale-125 transition-transform">bug_report</span>
-                                </div>
-                                <h3 class="text-headline-md font-bold text-white mb-4">
-                                    <span class="en:inline vi:hidden">Lesson 3: Germs</span>
-                                    <span class="vi:inline en:hidden">Bài học 3: Vi khuẩn</span>
-                                </h3>
-                                <div class="arcade-cabinet-screen w-full overflow-hidden rounded-xl border-4 border-black mb-6 relative shimmer-effect"
-                                    style="height: 500px;"><img alt="Lesson 3: Germs"
-                                        class="w-full h-full object-cover"
-                                        src="img/lesson_germs.png">
-                                </div>
-                                <p class="text-white/80 font-medium">
-                                    <span class="en:inline vi:hidden">Discover the world of microbes and learn how to keep yourself safe from germs!</span>
-                                    <span class="vi:inline en:hidden">Khám phá thế giới vi sinh vật và tìm hiểu cách bảo vệ bản thân khỏi vi khuẩn!</span>
-                                </p>
-                            </div>
-                            <a href="https://quizlet.com/vn/1191535890/germs-flash-cards/?funnelUUID=7024f279-bbd1-47b5-a4aa-ab0fc9e86167" target="_blank"
-                                class="mt-8 bg-white text-[#0046ad] py-4 rounded-2xl font-bold squishy-button shimmer-effect shadow-xl flex items-center justify-center gap-2 magnetic-button"
-                                style="transform: translate(0px) scale(1);">
-                                <span class="en:inline vi:hidden">FIGHT GERMS</span>
-                                <span class="vi:inline en:hidden">DIỆT VI TRÙNG</span>
-                                <span class="material-symbols-outlined">shield</span>
-                            </a>
-                        </div>
-                        <!-- Lesson 2: Body Quiz -->
-                        <div class="group bg-[#bb0026] rounded-[2.5rem] p-8 border-4 rubiks-red flex flex-col justify-between bouncy-hover reveal-on-scroll h-full w-full active"
-                            style="transition-delay: 0.4s;">
-                            <div>
-                                <div class="flex justify-between items-start mb-6">
-                                    <span
-                                        class="bg-[#410007] text-[#ffb3b1] px-4 py-1 rounded-full text-label-sm font-bold uppercase">
-                                        <span class="en:inline vi:hidden">Quiz</span>
-                                        <span class="vi:inline en:hidden">Đố vui</span>
-                                    </span>
-                                    <span
-                                        class="material-symbols-outlined text-[#ffb3b1] group-hover:scale-125 transition-transform">favorite</span>
-                                </div>
-                                <h3 class="text-headline-md font-bold text-white mb-4">
-                                    <span class="en:inline vi:hidden">Lesson 2: Body Quiz</span>
-                                    <span class="vi:inline en:hidden">Bài học 2: Đố vui Cơ thể</span>
-                                </h3>
-                                <div class="arcade-cabinet-screen w-full overflow-hidden rounded-xl border-4 border-black mb-6 relative shimmer-effect"
-                                    style="height: 500px;"><img alt="Lesson 2: Body Quiz"
-                                        class="w-full h-full object-cover"
-                                        src="img/lesson_body_quiz.png">
-                                </div>
-                                <p class="text-white/80 font-medium">
-                                    <span class="en:inline vi:hidden">Test your knowledge about the human body systems and functions in this interactive quiz!</span>
-                                    <span class="vi:inline en:hidden">Kiểm tra kiến thức của bạn về các hệ cơ quan và chức năng của cơ thể người trong trò đố vui tương tác này!</span>
-                                </p>
-                            </div>
-                            <a href="https://wayground.com/join/quiz/6a3fc48c00eeaf36fa30d746/start?studentShare=true" target="_blank"
-                                class="mt-8 bg-white text-[#bb0026] py-4 rounded-2xl font-bold squishy-button shimmer-effect shadow-xl flex items-center justify-center gap-2 magnetic-button"
-                                style="transform: translate(0px) scale(1);">
-                                <span class="en:inline vi:hidden">START BODY QUIZ</span>
-                                <span class="vi:inline en:hidden">BẮT ĐẦU ĐỐ VUI</span>
-                                <span class="material-symbols-outlined">rocket_launch</span>
-                            </a>
-                        </div>
                     </div>
                 </section>
             </main>
             <footer
-                class="bg-secondary text-on-secondary w-full rounded-t-[4rem] mt-16 px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-center gap-8 relative z-10 antigravity-element"
+                class="bg-secondary text-on-secondary w-full rounded-t-[4rem] mt-16 px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-center gap-8 relative z-10 antigravity-element border-t-4 border-black shadow-[0_-8px_0px_0px_rgba(0,0,0,1)]"
                 style="transform: translate3d(0px, -0.0568518px, 0px) rotateX(3.76538deg) rotateY(-2.325deg);">
                 <div class="flex flex-col items-center md:items-start gap-4">
                     <span class="text-headline-md font-headline-md text-white">Rubik</span>

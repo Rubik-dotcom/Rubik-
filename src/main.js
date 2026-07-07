@@ -13,7 +13,6 @@ const state = {
 };
 
 const grid = document.getElementById('interactive-grid');
-const shapes = document.querySelectorAll('.floating-shape');
 const elements = document.querySelectorAll('.antigravity-element');
 const header = document.querySelector('header');
 const blob = document.getElementById('blob');
@@ -66,7 +65,7 @@ magneticButtons.forEach(btn => {
 });
 
 if (sparkleLayer) {
-    for(let i=0; i<15; i++) {
+    for (let i = 0; i < 15; i++) {
         const sparkle = document.createElement('div');
         sparkle.className = 'sparkle';
         sparkle.style.left = Math.random() * 100 + '%';
@@ -111,11 +110,11 @@ function animate() {
 
     if (header) {
         if (state.scroll > 50) {
-            header.classList.add('h-16', 'shadow-md', 'bg-surface/95');
+            header.classList.add('h-16', 'shadow-md', 'bg-[#fcee0a]/95');
             header.classList.remove('h-20', 'shadow-sm');
         } else {
             header.classList.add('h-20', 'shadow-sm');
-            header.classList.remove('h-16', 'shadow-md', 'bg-surface/95');
+            header.classList.remove('h-16', 'shadow-md', 'bg-[#fcee0a]/95');
         }
     }
 
@@ -125,12 +124,6 @@ function animate() {
         grid.style.transform = `translate3d(${gridX}px, ${gridY}px, 0) rotate(${state.mouseX * 3}deg)`;
     }
 
-    shapes.forEach((shape) => {
-        const speed = parseFloat(shape.dataset.speed || 0.02);
-        const moveX = (state.mouseX * speed * state.winW);
-        const moveY = (state.mouseY * speed * state.winH) - (state.scroll * speed * 0.5);
-        shape.style.transform = `translate3d(${moveX}px, ${moveY}px, 0)`;
-    });
 
     elements.forEach((el, index) => {
         const sway = Math.sin(state.time * 0.5 + index) * 5;
@@ -170,7 +163,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         if (targetId !== '#') {
             e.preventDefault();
             const target = document.querySelector(targetId);
-            if(target && scrollWrapper) {
+            if (target && scrollWrapper) {
                 const targetRect = target.getBoundingClientRect();
                 const wrapperRect = scrollWrapper.getBoundingClientRect();
                 const offsetTop = targetRect.top - wrapperRect.top;
