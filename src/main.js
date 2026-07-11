@@ -187,3 +187,23 @@ if (langToggle) {
         window.dispatchEvent(new Event('resize'));
     });
 }
+
+let touchStartY = 0;
+
+// Capture the initial touch position
+window.addEventListener('touchstart', (e) => {
+    touchStartY = e.touches[0].clientY;
+}, { passive: true });
+
+// Calculate the difference as the user drags their finger
+window.addEventListener('touchmove', (e) => {
+    const touchY = e.touches[0].clientY;
+    const deltaY = touchStartY - touchY;
+
+    // Update touchStartY for the next continuous frame
+    touchStartY = touchY;
+
+    // Apply the change to your target scroll state
+    state.targetScroll += deltaY * 1.5;
+    state.targetScroll = Math.max(0, Math.min(state.targetScroll, wrapperHeight - state.winH));
+}, { passive: true });
