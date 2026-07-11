@@ -204,6 +204,6 @@ window.addEventListener('touchmove', (e) => {
     touchStartY = touchY;
 
     // Apply the change to your target scroll state
-    state.targetScroll += deltaY * 1.5;
+    state.targetScroll += deltaY * 3.0;
     state.targetScroll = Math.max(0, Math.min(state.targetScroll, wrapperHeight - state.winH));
 }, { passive: true });
