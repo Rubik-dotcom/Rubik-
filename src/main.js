@@ -110,11 +110,11 @@ function animate() {
 
     if (header) {
         if (state.scroll > 50) {
-            header.classList.add('h-16', 'shadow-md', 'bg-[#fcee0a]/95');
-            header.classList.remove('h-20', 'shadow-sm');
+            header.classList.add('h-16', 'bg-white/95', 'backdrop-blur-md');
+            header.classList.remove('h-20');
         } else {
-            header.classList.add('h-20', 'shadow-sm');
-            header.classList.remove('h-16', 'shadow-md', 'bg-[#fcee0a]/95');
+            header.classList.add('h-20');
+            header.classList.remove('h-16', 'bg-white/95', 'backdrop-blur-md');
         }
     }
 
