@@ -268,6 +268,12 @@ body {
     transform: translateY(-2px);
 }
 
+[href="#about"]:hover {
+    border-color: #000;
+    background-color: rgba(251, 140, 0, 0.1);
+    transform: translateY(-2px);
+}
+
 [href="#news"]:hover {
     border-color: #000;
     background-color: rgba(30, 136, 229, 0.1);
@@ -283,6 +289,15 @@ body {
 [href="#hero"].nav-link-active {
     color: #fff !important;
     background-color: #e53935 !important;
+    border-color: #000 !important;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 1) !important;
+    font-weight: 800 !important;
+    transform: scale(1.05) translateY(-2px) !important;
+}
+
+[href="#about"].nav-link-active {
+    color: #fff !important;
+    background-color: #fb8c00 !important;
     border-color: #000 !important;
     box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 1) !important;
     font-weight: 800 !important;
@@ -391,7 +406,7 @@ body {
 
 .arcade-cabinet {
     background: #191b22;
-    border: 12px solid #bb0026;
+    border: 12px solid #3200bb;
     border-radius: 2rem;
     padding: 1.5rem;
     position: relative;
